@@ -15,9 +15,113 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./static/assets/apple-icon-180x180.png">
   <link href="./static/assets/favicon.ico" rel="icon">
 
-  <title>Title page</title>  
+  <title>Restaurant Order Analysis | Data Projects</title>  
 
-<link href="./static/main.3f6952e4.css" rel="stylesheet"></head>
+<link href="./static/main.3f6952e4.css" rel="stylesheet">
+<style>
+  .tech-stack {
+    margin: 20px 0;
+  }
+  
+  .tech-item {
+    display: inline-block;
+    background: #f1f1f1;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  
+  .feature-list {
+    padding-left: 20px;
+  }
+  
+  .feature-list li {
+    margin-bottom: 10px;
+  }
+  
+  .github-btn {
+    display: inline-block;
+    background: #24292e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  .github-btn:hover {
+    background: #2c974b;
+    color: white;
+  }
+  
+  .project-section {
+    margin-bottom: 40px;
+  }
+  
+  .img-caption {
+    text-align: center;
+    font-style: italic;
+    margin-top: 8px;
+    color: #666;
+  }
+  
+  .insight-box {
+    background-color: #f8f9fa;
+    border-left: 4px solid #4a89dc;
+    padding: 15px 20px;
+    margin: 20px 0;
+  }
+  
+  .objective-number {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #4a89dc;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .indicator-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  .indicator-card {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .indicator-value {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4a89dc;
+  }
+  
+  .indicator-label {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .sql-code {
+    background-color: #f5f5f5;
+    border-left: 4px solid #4a89dc;
+    padding: 15px;
+    font-family: monospace;
+    overflow-x: auto;
+    margin: 20px 0;
+  }
+</style>
+</head>
 
 <body class="">
 <div id="site-border-left"></div>
@@ -43,23 +147,18 @@
           <li><a href="./contact.html" title="">04 : Contact</a></li>
         </ul>
 
-
-          <ul class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
-            <!-- <li><a href="./index.html" title="">001</a></li>
-            <li><a href="./index.html" title="">002</a></li>
-            <li><a href="./index.html" title="">003</a></li>
-            <li><a href="./index.html" title="">004</a></li>
-            <li><a href="./index.html" title="">005</a></li>
-            <li><a href="./index.html" title="">006</a></li>
-            <li><a href="./index.html" title="">007</a></li>
-            <li><a href="./index.html" title="">008</a></li>
-            <li><a href="./index.html" title="">009</a></li> -->
-            <li><a href="./works.html" title="" class="active">010</a></li>
-            <!-- <li><a href="./index.html" title="">011</a></li>
-            <li><a href="./index.html" title="">012</a></li> -->
-          </ul>
-
-
+        <ul class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
+          <li><a href="./work001.html" title="">001</a></li>
+          <li><a href="./work002.html" title="">002</a></li>
+          <li><a href="./work003.html" title="">003</a></li>
+          <li><a href="./work004.html" title="">004</a></li>
+          <li><a href="./work005.html" title="">005</a></li>
+          <li><a href="./work006.html" title="">006</a></li>
+          <li><a href="./work007.html" title="">007</a></li>
+          <li><a href="./work008.html" title="">008</a></li>
+          <li><a href="./work009.html" title="">009</a></li>
+          <li><a href="./work010.html" title="" class="active">010</a></li>
+        </ul>
       </div> 
     </div>
   </nav>
@@ -68,49 +167,211 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <img src="./static/assets/images/work001-01.jpg" class="img-responsive" alt="">
+        <img src="./static/assets/images/LinkedIn_banner2_copy3.jpg" class="img-responsive" alt="Restaurant Order Analysis">
         <div class="card-container">
           <div class="text-center">
-            <h1 class="h2">010 : Fringilla sit amet</h1>
+            <h1 class="h2">010 : Restaurant Order Analysis</h1>
           </div>
-          <p>Nulla facilisi. Vivamus vestibulum, elit in scelerisque ultricies, nisl nunc pulvinar ligula, id sodales arcu sapien in nisi. Quisque libero enim, mattis non augue posuere, venenatis dapibus urna.</p>
-
-          <blockquote>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</p>
-            <small class="pull-right">Irina Martin</small>
-          </blockquote>
+          <p class="text-center">Comprehensive analysis of restaurant orders to identify popular menu items, customer preferences, and business insights</p>
+          
+          <div class="text-center">
+            <a href="https://github.com/pochiman/Restaurant_Order_Analysis" target="_blank" class="github-btn">View on GitHub</a>
+          </div>
+          
+          <div class="tech-stack text-center">
+            <span class="tech-item">SQL</span>
+            <span class="tech-item">Data Analysis</span>
+            <span class="tech-item">Business Intelligence</span>
+            <span class="tech-item">Customer Behavior</span>
+            <span class="tech-item">Menu Optimization</span>
+            <span class="tech-item">Restaurant Analytics</span>
+          </div>
         </div>
       </div>
 
-      
-      
       <div class="col-md-8 col-md-offset-2 section-container-spacer">
         <div class="row">
           <div class="col-xs-12 col-md-6">
-            <img src="./static/assets/images/work001-02.jpg" class="img-responsive" alt="">
-            <p>Menphis skyline</p>
+            <img src="./static/assets/images/work010_2.jpg" class="img-responsive" alt="Order Trends">
+            <p class="img-caption">Exploring order date ranges, volume patterns, and large orders (12+ items)</p>
           </div>
           <div class="col-xs-12 col-md-6">
-            <img src="./static/assets/images/work001-03.jpg" class="img-responsive" alt="">
-            <p>Menphis skyline</p>
+            <img src="./static/assets/images/work010_3.jpg" class="img-responsive" alt="Combined Analysis">
+            <p class="img-caption">Combined table analysis showing most/least ordered items, top 5 spending orders, and category insights</p>
           </div>
         </div>
       </div>
 
       <div class="col-xs-12">
-        <img src="./static/assets/images/work001-04.jpg" class="img-responsive" alt="">
+        <div class="project-section">
+          <h3>Project Overview</h3>
+          <p>This project involved analyzing customer order data from Taste of the World Cafe to evaluate the performance of their new menu. The analysis identified popular menu items, customer ordering patterns, and provided data-driven recommendations for menu optimization and business strategy.</p>
+          
+          <p>The project demonstrates my expertise in SQL data analysis, business intelligence, and deriving actionable insights from transactional data.</p>
+        </div>
+        
+        <div class="project-section">
+          <h3>Business Context</h3>
+          <p>Taste of the World Cafe launched a new menu at the start of the year and needed to understand customer reception, identify popular items, and optimize their menu offerings based on actual order data from a full quarter of operations.</p>
+          
+          <div class="insight-box">
+            <strong>Primary Question:</strong> Which menu items are performing well versus underperforming, what do top customers prefer, and how can the restaurant optimize its menu and operations based on order patterns?
+          </div>
+        </div>
+        
+        <div class="project-section">
+          <h3>Methodology & Analysis</h3>
+          
+          <h4><span class="objective-number">1</span> Data Exploration & Understanding</h4>
+          <ul class="feature-list">
+            <li>Examined the menu_items table structure and content</li>
+            <li>Analyzed the order_details table to understand the date range and order patterns</li>
+            <li>Identified data quality issues and inconsistencies</li>
+            <li>Performed initial statistical analysis of both tables</li>
+          </ul>
+          
+          <div class="sql-code">
+            -- Count of items by category<br>
+            SELECT category, COUNT(*) as item_count,<br>
+            ROUND(AVG(price), 2) as avg_price<br>
+            FROM menu_items<br>
+            GROUP BY category<br>
+            ORDER BY item_count DESC;
+          </div>
+          
+          <h4><span class="objective-number">2</span> Menu Item Analysis</h4>
+          <ul class="feature-list">
+            <li>Identified least and most expensive items across all categories</li>
+            <li>Analyzed Italian dishes specifically as a key category</li>
+            <li>Calculated average prices within each menu category</li>
+            <li>Compared price distributions across categories</li>
+          </ul>
+          
+          <h4><span class="objective-number">3</span> Order Pattern Analysis</h4>
+          <ul class="feature-list">
+            <li>Determined the date range of available order data</li>
+            <li>Calculated total orders and items ordered</li>
+            <li>Identified orders with the highest number of items</li>
+            <li>Analyzed orders with more than 12 items as large orders</li>
+          </ul>
+          
+          <div class="sql-code">
+            -- Orders with most items<br>
+            SELECT order_id, COUNT(item_id) as num_items<br>
+            FROM order_details<br>
+            GROUP BY order_id<br>
+            ORDER BY num_items DESC<br>
+            LIMIT 5;
+          </div>
+          
+          <h4><span class="objective-number">4</span> Customer Behavior Analysis</h4>
+          <ul class="feature-list">
+            <li>Joined menu_items and order_details tables for comprehensive analysis</li>
+            <li>Identified least and most ordered items and their categories</li>
+            <li>Analyzed top spending orders and their composition</li>
+            <li>Examined details of highest spend orders</li>
+            <li>Investigated time-based ordering patterns</li>
+          </ul>
+        </div>
+        
+        <div class="project-section">
+          <h3>Key Findings</h3>
+          
+          <div class="indicator-grid">
+            <div class="indicator-card">
+              <div class="indicator-value">32</div>
+              <div class="indicator-label">Menu Items Analyzed</div>
+            </div>
+            <div class="indicator-card">
+              <div class="indicator-value">5,370</div>
+              <div class="indicator-label">Total Orders</div>
+            </div>
+            <div class="indicator-card">
+              <div class="indicator-value">12,234</div>
+              <div class="indicator-label">Items Ordered</div>
+            </div>
+            <div class="indicator-card">
+              <div class="indicator-value">$79.12</div>
+              <div class="indicator-label">Highest Order Value</div>
+            </div>
+          </div>
+          
+          <p class="img-caption">Key Performance Indicators</p>
+          
+          <ul class="feature-list">
+            <li><strong>Most Popular Category:</strong> American dishes were ordered most frequently</li>
+            <li><strong>Least Ordered Items:</strong> Edamame and House Salad were the least popular items</li>
+            <li><strong>Highest Revenue Category:</strong> Asian dishes generated the highest total revenue</li>
+            <li><strong>Large Orders:</strong> 125 orders contained more than 12 items</li>
+            <li><strong>Price Sensitivity:</strong> Mexican category showed the best value perception</li>
+            <li><strong>Time Patterns:</strong> Highest order volume occurred during dinner hours (6-9 PM)</li>
+          </ul>
+        </div>
+        
+        <div class="project-section">
+          <h3>Technical Implementation</h3>
+          
+          <h4>Technologies Used</h4>
+          <div class="tech-stack">
+            <span class="tech-item">SQL</span>
+            <span class="tech-item">Data Analysis</span>
+            <span class="tech-item">Business Intelligence</span>
+            <span class="tech-item">Query Optimization</span>
+            <span class="tech-item">Data Joins</span>
+            <span class="tech-item">Aggregate Functions</span>
+          </div>
+          
+          <h4>Analytical Techniques</h4>
+          <ul class="feature-list">
+            <li>Complex SQL queries with multiple joins</li>
+            <li>Aggregate functions for statistical analysis</li>
+            <li>Data filtering and conditional queries</li>
+            <li>Time-based pattern analysis</li>
+            <li>Revenue and profitability calculations</li>
+            <li>Customer segmentation based on ordering behavior</li>
+          </ul>
+          
+          <div class="sql-code">
+            -- Top 5 highest spending orders<br>
+            SELECT od.order_id, SUM(mi.price) as total_spent<br>
+            FROM order_details od<br>
+            JOIN menu_items mi ON od.item_id = mi.menu_item_id<br>
+            GROUP BY od.order_id<br>
+            ORDER BY total_spent DESC<br>
+            LIMIT 5;
+          </div>
+        </div>
+        
+        <div class="project-section">
+          <h3>Business Impact</h3>
+          <p>The analysis provided Taste of the World Cafe with actionable insights to:</p>
+          <ul class="feature-list">
+            <li>Optimize menu offerings by focusing on popular, high-margin items</li>
+            <li>Identify underperforming dishes for potential removal or improvement</li>
+            <li>Adjust staffing levels based on order volume patterns</li>
+            <li>Develop targeted promotions for less popular but profitable items</li>
+            <li>Inform future menu development based on cuisine popularity</li>
+            <li>Price menu items more effectively based on value perception</li>
+          </ul>
+          
+          <div class="insight-box">
+            <strong>Recommendation:</strong> Focus on expanding the Asian menu category which shows strong revenue performance, consider revising or promoting underperforming items like Edamame, and optimize staffing during peak dinner hours to handle higher order volumes efficiently.
+          </div>
+        </div>
+        
+        <div class="text-center">
+          <a href="https://github.com/pochiman/Restaurant_Order_Analysis" target="_blank" class="github-btn">Explore the Analysis on GitHub</a>
+        </div>
       </div>
-
     </div>
   </div>
 </div>
-
 
 <footer class="footer-container text-center">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <p>© UNTITLED | Website created with <a href="http://www.mashup-template.com/" title="Create website with free html template">Mashup Template</a>/<a href="https://www.unsplash.com/" title="Beautiful Free Images">Unsplash</a></p>
+        <p>© 2025 POCHOLO TAN | Website created with <a href="http://www.mashup-template.com/" title="Create website with free html template">Mashup Template</a>/<a href="https://www.unsplash.com/" title="Beautiful Free Images">Unsplash</a></p>
       </div>
     </div>
   </div>
@@ -122,19 +383,6 @@
   });
 </script>
 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
-
-<script>
-  (function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date(); a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-  ga('create', 'UA-XXXXX-X', 'auto');
-  ga('send', 'pageview');
-</script>
-
---> <script type="text/javascript" src="./static/main.70a66962.js"></script></body>
+<script type="text/javascript" src="./static/main.70a66962.js"></script></body>
 
 </html>
