@@ -86,24 +86,35 @@
     margin-right: 10px;
   }
   
-  .sales-table {
+  .data-quality-table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
   }
   
-  .sales-table th, .sales-table td {
+  .data-quality-table th, .data-quality-table td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
   }
   
-  .sales-table th {
+  .data-quality-table th {
     background-color: #f2f2f2;
   }
   
-  .sales-table tr:nth-child(even) {
+  .data-quality-table tr:nth-child(even) {
     background-color: #f9f9f9;
+  }
+  
+  .dashboard-feature {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+
+  .section-spacing {
+    margin-top: 30px;
   }
 </style>
 </head>
@@ -133,13 +144,39 @@
         </ul>
 
         <ul class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
-          <li><a href="./work001.html" title="">001</a></li>
-          <li><a href="./work002.html" title="">002</a></li>
-          <li><a href="./work003.html" title="">003</a></li>
-          <li><a href="./work004.html" title="">004</a></li>
-          <li><a href="./work005.html" title="">005</a></li>
-          <li><a href="./work006.html" title="">006</a></li>
-          <li><a href="./work007.html" title="" class="active">007</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              007 <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="./works.html">All Projects</a></li>
+              <li class="divider"></li>
+              <li><a href="./work001.html">001 : Algorithmic Forex Trading</a></li>
+              <li><a href="./work002.html">002 : AirBnB Listing Analysis</a></li>
+              <li><a href="./work003.html">003 : Electricity Usage Analysis</a></li>
+              <li><a href="./work004.html">004 : Customer Data Preparation</a></li>
+              <li><a href="./work005.html">005 : Customer Classification</a></li>
+              <li><a href="./work006.html">006 : Customer Segmentation</a></li>
+              <li><a href="./work007.html">007 : Global Video Game Sales</a></li>
+              <li><a href="./work008.html">008 : Predicting Fuel Economy</a></li>
+              <li><a href="./work009.html">009 : World Economic Report</a></li>
+              <li><a href="./work010.html">010 : Restaurant Order Analysis</a></li>
+              <li><a href="./work011.html">011 : Motor Vehicle Thefts</a></li>
+              <li><a href="./work012.html">012 : Baby Name Trend Analysis</a></li>
+              <li><a href="./work013.html">013 : Coffee Shop Dashboard</a></li>
+              <li><a href="./work014.html">014 : Traffic Safety Analysis</a></li>
+              <li><a href="./work015.html">015 : Customer Complaint Tracking</a></li>
+              <li><a href="./work016.html">016 : Global Electronics Retailer</a></li>
+              <li><a href="./work017.html">017 : HR Survey Analysis</a></li>
+              <li><a href="./work018.html">018 : Manufacturing Downtime</a></li>
+              <li><a href="./work019.html">019 : MoMA Art Explorer</a></li>
+              <li><a href="./work020.html">020 : CrossFit Games Analysis</a></li>
+              <li><a href="./work021.html">021 : Global CO2 Emissions</a></li>
+              <li><a href="./work022.html">022 : Supply Chain Shipping</a></li>
+              <li><a href="./work023.html">023 : CRM Sales Dashboard</a></li>
+              <li><a href="./work024.html">024 : Stock Market Tracker</a></li>
+            </ul>
+          </li>
         </ul>
       </div> 
     </div>
@@ -163,11 +200,7 @@
           <div class="tech-stack text-center">
             <span class="tech-item">Python</span>
             <span class="tech-item">Pandas</span>
-            <span class="tech-item">Data Visualization</span>
-            <span class="tech-item">Interactive Dashboard</span>
             <span class="tech-item">Plotly</span>
-            <span class="tech-item">Data Analysis</span>
-            <span class="tech-item">Market Analysis</span>
             <span class="tech-item">Jupyter</span>
           </div>
         </div>
@@ -176,12 +209,12 @@
       <div class="col-md-8 col-md-offset-2 section-container-spacer">
         <div class="row">
           <div class="col-xs-12 col-md-6">
-            <img src="./static/assets/images/work007_1.jpg" class="img-responsive" alt="Video Game Sales Trends">
-            <p class="img-caption">Global video game sales trends from 1971-2024</p>
+            <img src="./static/assets/images/work007_1.jpg" class="img-responsive" alt="Sales Trend Over Time">
+            <p class="img-caption">Global video game sales trend from 1971-2024 showing industry growth patterns</p>
           </div>
           <div class="col-xs-12 col-md-6">
-            <img src="./static/assets/images/work007_2.jpg" class="img-responsive" alt="Top Selling Games">
-            <p class="img-caption">Top 10 best-selling video games of all time</p>
+            <img src="./static/assets/images/work007_2.jpg" class="img-responsive" alt="Top Selling Games Dashboard">
+            <p class="img-caption">Interactive dashboard showing top-selling titles with regional sales breakdown</p>
           </div>
         </div>
       </div>
@@ -189,9 +222,9 @@
       <div class="col-xs-12">
         <div class="project-section">
           <h3>Project Overview</h3>
-          <p>This project involved analyzing global video game sales data for 64,016 titles released between 1971-2024. The goal was to create an interactive dashboard that provides insights into sales trends, popular genres, top-performing consoles, and regional market differences to inform strategic decision-making for game development and marketing.</p>
+          <p>This project involved analyzing global video game sales data for 64,016 titles released between 1971-2024. The goal was to create an interactive dashboard that provides insights into sales trends, popular genres, top-performing consoles, and regional market differences to come up with strategic decision-making for game development and marketing.</p>
           
-          <p>The project demonstrates my expertise in data visualization, interactive dashboard creation, and market analysis across global regions and decades of gaming history.</p>
+          <p>The project demonstrates advanced data profiling, preparation, and visualization skills, culminating in a dynamic tool for executive decision-making.</p>
         </div>
         
         <div class="project-section">
@@ -199,7 +232,7 @@
           <p>Mavendo Games needed better visibility into the global gaming market to identify promising opportunities, understand regional preferences, and make data-driven decisions about game development, publishing, and market expansion strategies.</p>
           
           <div class="insight-box">
-            <strong>Primary Question:</strong> What are the global and regional trends in video game sales, and how can we identify the most promising markets, genres, and platforms for future game development?
+            <strong>Primary Question:</strong> How can we transform raw video game sales data into actionable insights that help identify successful patterns across genres, regions, and time periods?
           </div>
         </div>
         
@@ -240,59 +273,44 @@
         <div class="project-section">
           <h3>Key Findings</h3>
           
-          <h4>Top 10 Best-Selling Games</h4>
-          <table class="sales-table">
+          <h4>Industry Trends & Patterns</h4>
+          <table class="data-quality-table">
             <tr>
-              <th>Rank</th>
-              <th>Title</th>
-              <th>Console</th>
-              <th>Global Sales (millions)</th>
-              <th>Release Year</th>
+              <th>Insight Category</th>
+              <th>Key Finding</th>
+              <th>Business Implication</th>
             </tr>
             <tr>
-              <td>1</td>
-              <td>Minecraft</td>
-              <td>Multi-platform</td>
-              <td>238.0</td>
-              <td>2011</td>
+              <td>Historical Growth</td>
+              <td>Video game industry shows consistent growth with major spikes during console generation launches</td>
+              <td>Time investments with hardware cycles for maximum impact</td>
             </tr>
             <tr>
-              <td>2</td>
-              <td>Grand Theft Auto V</td>
-              <td>Multi-platform</td>
-              <td>175.0</td>
-              <td>2013</td>
+              <td>Regional Preferences</td>
+              <td>Significant variations in genre popularity across different geographic markets</td>
+              <td>Develop region-specific marketing and content strategies</td>
             </tr>
             <tr>
-              <td>3</td>
-              <td>Tetris (EA)</td>
-              <td>Mobile</td>
-              <td>100.0</td>
-              <td>2006</td>
+              <td>Genre Specialization</td>
+              <td>Certain consoles demonstrate specialization in specific game genres</td>
+              <td>Align development focus with platform strengths</td>
             </tr>
             <tr>
-              <td>4</td>
-              <td>Wii Sports</td>
-              <td>Wii</td>
-              <td>82.9</td>
-              <td>2006</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>PUBG: Battlegrounds</td>
-              <td>Multi-platform</td>
-              <td>75.0</td>
-              <td>2017</td>
+              <td>Cross-regional Hits</td>
+              <td>Identification of titles successful globally vs. region-specific hits</td>
+              <td>Optimize localization and global release strategies</td>
             </tr>
           </table>
           
+          <div class="section-spacing"></div>
+
+          <h4>Strategic Insights</h4>
           <ul class="feature-list">
-            <li><strong>Market Growth:</strong> Video game industry has experienced exponential growth since the 2000s</li>
-            <li><strong>Regional Preferences:</strong> Significant differences in genre preferences across NA, Japan, and EU markets</li>
-            <li><strong>Platform Specialization:</strong> Certain consoles show strong specialization in specific genres</li>
-            <li><strong>Cross-regional Hits:</strong> Identified games that succeeded globally versus those with regional appeal</li>
-            <li><strong>Genre Trends:</strong> Action and sports genres consistently dominate sales charts</li>
-            <li><strong>Publisher Performance:</strong> Nintendo, EA, and Activision consistently among top publishers</li>
+            <li><strong>Top Performing Titles:</strong> Wii Sports, Grand Theft Auto V, and Super Mario Bros. dominate all-time sales charts</li>
+            <li><strong>Growth Periods:</strong> Major industry growth observed during 1980s (NES era) and 2000s (PS2/Xbox generation)</li>
+            <li><strong>Regional Variations:</strong> Japanese market shows strong preference for RPGs while North America favors action/shooter genres</li>
+            <li><strong>Console Specialization:</strong> Nintendo platforms excel with family-friendly and platformer games</li>
+            <li><strong>Market Evolution:</strong> Shift from arcade-focused to home console to mobile gaming visible in sales patterns</li>
           </ul>
         </div>
         
@@ -301,14 +319,10 @@
           
           <h4>Technologies Used</h4>
           <div class="tech-stack">
-            <span class="tech-item">Python 3</span>
+            <span class="tech-item">Python</span>
             <span class="tech-item">Pandas</span>
             <span class="tech-item">Plotly</span>
-            <span class="tech-item">Matplotlib</span>
-            <span class="tech-item">Seaborn</span>
-            <span class="tech-item">Jupyter Notebook</span>
-            <span class="tech-item">Data Visualization</span>
-            <span class="tech-item">Interactive Dashboards</span>
+            <span class="tech-item">Jupyter</span>
           </div>
           
           <h4>Analytical Techniques</h4>
@@ -325,14 +339,13 @@
         
         <div class="project-section">
           <h3>Business Impact</h3>
-          <p>The interactive dashboard enabled Mavendo Games to:</p>
+          <p>The interactive dashboard and analysis provided Mavendo Games with:</p>
           <ul class="feature-list">
-            <li>Identify the most promising genres for new game development</li>
-            <li>Understand regional preferences for targeted marketing</li>
-            <li>Analyze competitor performance across different platforms</li>
-            <li>Identify market trends and seasonal patterns</li>
-            <li>Make data-driven decisions about platform focus</li>
-            <li>Develop region-specific game localization strategies</li>
+            <li>Data-driven insights for strategic planning and resource allocation.</li>
+            <li>Identification of promising market segments and genre opportunities.</li>
+            <li>Understanding of regional preferences for targeted game development.</li>
+            <li>Historical context for industry trends and cyclical patterns.</li>
+            <li>Competitive intelligence on successful titles and publishers.</li>
           </ul>
           
           <div class="insight-box">
