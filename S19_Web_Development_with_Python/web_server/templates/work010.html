@@ -86,39 +86,47 @@
     margin-right: 10px;
   }
   
-  .indicator-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
+  .sql-table {
+    width: 100%;
+    border-collapse: collapse;
     margin: 20px 0;
-  }
-  
-  .indicator-card {
-    background: #f9f9f9;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 15px;
-    text-align: center;
-  }
-  
-  .indicator-value {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #4a89dc;
-  }
-  
-  .indicator-label {
+    font-family: monospace;
     font-size: 0.9em;
-    color: #666;
   }
   
-  .sql-code {
+  .sql-table th, .sql-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .sql-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .sql-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .code-snippet {
     background-color: #f5f5f5;
     border-left: 4px solid #4a89dc;
     padding: 15px;
+    margin: 15px 0;
     font-family: monospace;
+    font-size: 0.9em;
     overflow-x: auto;
+  }
+  
+  .critical-insight {
+    background-color: #f8f9fa;
+    border-left: 4px solid #4a89dc;
+    padding: 15px 20px;
     margin: 20px 0;
+  }
+
+  .section-spacing {
+    margin-top: 30px;
   }
 </style>
 </head>
@@ -148,16 +156,39 @@
         </ul>
 
         <ul class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
-          <li><a href="./work001.html" title="">001</a></li>
-          <li><a href="./work002.html" title="">002</a></li>
-          <li><a href="./work003.html" title="">003</a></li>
-          <li><a href="./work004.html" title="">004</a></li>
-          <li><a href="./work005.html" title="">005</a></li>
-          <li><a href="./work006.html" title="">006</a></li>
-          <li><a href="./work007.html" title="">007</a></li>
-          <li><a href="./work008.html" title="">008</a></li>
-          <li><a href="./work009.html" title="">009</a></li>
-          <li><a href="./work010.html" title="" class="active">010</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              010 <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="./works.html">All Projects</a></li>
+              <li class="divider"></li>
+              <li><a href="./work001.html">001 : Algorithmic Forex Trading</a></li>
+              <li><a href="./work002.html">002 : AirBnB Listing Analysis</a></li>
+              <li><a href="./work003.html">003 : Electricity Usage Analysis</a></li>
+              <li><a href="./work004.html">004 : Customer Data Preparation</a></li>
+              <li><a href="./work005.html">005 : Customer Classification</a></li>
+              <li><a href="./work006.html">006 : Customer Segmentation</a></li>
+              <li><a href="./work007.html">007 : Global Video Game Sales</a></li>
+              <li><a href="./work008.html">008 : Predicting Fuel Economy</a></li>
+              <li><a href="./work009.html">009 : World Economic Report</a></li>
+              <li><a href="./work010.html">010 : Restaurant Order Analysis</a></li>
+              <li><a href="./work011.html">011 : Motor Vehicle Thefts</a></li>
+              <li><a href="./work012.html">012 : Baby Name Trend Analysis</a></li>
+              <li><a href="./work013.html">013 : Coffee Shop Dashboard</a></li>
+              <li><a href="./work014.html">014 : Traffic Safety Analysis</a></li>
+              <li><a href="./work015.html">015 : Customer Complaint Tracking</a></li>
+              <li><a href="./work016.html">016 : Global Electronics Retailer</a></li>
+              <li><a href="./work017.html">017 : HR Survey Analysis</a></li>
+              <li><a href="./work018.html">018 : Manufacturing Downtime</a></li>
+              <li><a href="./work019.html">019 : MoMA Art Explorer</a></li>
+              <li><a href="./work020.html">020 : CrossFit Games Analysis</a></li>
+              <li><a href="./work021.html">021 : Global CO2 Emissions</a></li>
+              <li><a href="./work022.html">022 : Supply Chain Shipping</a></li>
+              <li><a href="./work023.html">023 : CRM Sales Dashboard</a></li>
+              <li><a href="./work024.html">024 : Stock Market Tracker</a></li>
+            </ul>
+          </li>
         </ul>
       </div> 
     </div>
@@ -180,11 +211,11 @@
           
           <div class="tech-stack text-center">
             <span class="tech-item">SQL</span>
-            <span class="tech-item">Data Analysis</span>
-            <span class="tech-item">Business Intelligence</span>
-            <span class="tech-item">Customer Behavior</span>
-            <span class="tech-item">Menu Optimization</span>
-            <span class="tech-item">Restaurant Analytics</span>
+            <span class="tech-item">JOIN Operations</span>
+            <span class="tech-item">Aggregate Functions</span>
+            <span class="tech-item">Window Functions</span>
+            <span class="tech-item">Subqueries</span>
+            <span class="tech-item">CTEs</span>
           </div>
         </div>
       </div>
@@ -205,135 +236,61 @@
       <div class="col-xs-12">
         <div class="project-section">
           <h3>Project Overview</h3>
-          <p>This project involved analyzing customer order data from Taste of the World Cafe to evaluate the performance of their new menu. The analysis identified popular menu items, customer ordering patterns, and provided data-driven recommendations for menu optimization and business strategy.</p>
+          <p>This project was conducted for Taste of the World Cafe to evaluate customer response to their new menu launch. The project involved comprehensive analysis of a quarter's worth of order data to identify popular menu items, understand customer preferences, and provide data-driven recommendations for menu optimization.</p>
           
-          <p>The project demonstrates my expertise in SQL data analysis, business intelligence, and deriving actionable insights from transactional data.</p>
+          <p>The analysis helped the restaurant management make informed decisions about which dishes to promote, which categories to expand, and how to better align their offerings with customer preferences.</p>
         </div>
         
         <div class="project-section">
           <h3>Business Context</h3>
-          <p>Taste of the World Cafe launched a new menu at the start of the year and needed to understand customer reception, identify popular items, and optimize their menu offerings based on actual order data from a full quarter of operations.</p>
+          <p>Taste of the World Cafe introduced a new diverse menu at the beginning of the year and needed to understand how customers were responding to the changes. The restaurant management sought insights into which items were performing well, customer spending patterns, and opportunities for menu improvement.</p>
           
           <div class="insight-box">
-            <strong>Primary Question:</strong> Which menu items are performing well versus underperforming, what do top customers prefer, and how can the restaurant optimize its menu and operations based on order patterns?
+            <strong>Primary Question:</strong> How can the analysis of restaurant order data reveal customer preferences, identify popular menu items, and guide strategic menu optimization decisions?
           </div>
         </div>
         
         <div class="project-section">
           <h3>Methodology & Analysis</h3>
           
-          <h4><span class="objective-number">1</span> Data Exploration & Understanding</h4>
+          <h4><span class="objective-number">1</span> Menu Items Exploration</h4>
           <ul class="feature-list">
-            <li>Examined the menu_items table structure and content</li>
-            <li>Analyzed the order_details table to understand the date range and order patterns</li>
-            <li>Identified data quality issues and inconsistencies</li>
-            <li>Performed initial statistical analysis of both tables</li>
+            <li>Analyzed the complete menu structure and pricing across different categories</li>
+            <li>Identified price ranges and distribution within each cuisine type</li>
+            <li>Examined Italian dishes specifically for pricing and variety</li>
+            <li>Calculated average prices per category to understand pricing strategy</li>
           </ul>
           
-          <div class="sql-code">
-            -- Count of items by category<br>
-            SELECT category, COUNT(*) as item_count,<br>
-            ROUND(AVG(price), 2) as avg_price<br>
+          <div class="code-snippet">
+            -- Analyzing menu item distribution by category<br>
+            SELECT category, COUNT(*) as item_count, <br>
+                   ROUND(AVG(price), 2) as avg_price<br>
             FROM menu_items<br>
             GROUP BY category<br>
             ORDER BY item_count DESC;
           </div>
           
-          <h4><span class="objective-number">2</span> Menu Item Analysis</h4>
+          <h4><span class="objective-number">2</span> Order Details Analysis</h4>
           <ul class="feature-list">
-            <li>Identified least and most expensive items across all categories</li>
-            <li>Analyzed Italian dishes specifically as a key category</li>
-            <li>Calculated average prices within each menu category</li>
-            <li>Compared price distributions across categories</li>
+            <li>Determined the date range and volume of orders in the dataset</li>
+            <li>Analyzed order size patterns and identified large orders</li>
+            <li>Examined distribution of items per order to understand customer behavior</li>
+            <li>Identified orders with unusually high item counts for further investigation</li>
           </ul>
           
-          <h4><span class="objective-number">3</span> Order Pattern Analysis</h4>
-          <ul class="feature-list">
-            <li>Determined the date range of available order data</li>
-            <li>Calculated total orders and items ordered</li>
-            <li>Identified orders with the highest number of items</li>
-            <li>Analyzed orders with more than 12 items as large orders</li>
-          </ul>
-          
-          <div class="sql-code">
-            -- Orders with most items<br>
-            SELECT order_id, COUNT(item_id) as num_items<br>
-            FROM order_details<br>
-            GROUP BY order_id<br>
-            ORDER BY num_items DESC<br>
-            LIMIT 5;
-          </div>
-          
-          <h4><span class="objective-number">4</span> Customer Behavior Analysis</h4>
+          <h4><span class="objective-number">3</span> Customer Behavior Analysis</h4>
           <ul class="feature-list">
             <li>Joined menu_items and order_details tables for comprehensive analysis</li>
-            <li>Identified least and most ordered items and their categories</li>
-            <li>Analyzed top spending orders and their composition</li>
-            <li>Examined details of highest spend orders</li>
-            <li>Investigated time-based ordering patterns</li>
-          </ul>
-        </div>
-        
-        <div class="project-section">
-          <h3>Key Findings</h3>
-          
-          <div class="indicator-grid">
-            <div class="indicator-card">
-              <div class="indicator-value">32</div>
-              <div class="indicator-label">Menu Items Analyzed</div>
-            </div>
-            <div class="indicator-card">
-              <div class="indicator-value">5,370</div>
-              <div class="indicator-label">Total Orders</div>
-            </div>
-            <div class="indicator-card">
-              <div class="indicator-value">12,234</div>
-              <div class="indicator-label">Items Ordered</div>
-            </div>
-            <div class="indicator-card">
-              <div class="indicator-value">$79.12</div>
-              <div class="indicator-label">Highest Order Value</div>
-            </div>
-          </div>
-          
-          <p class="img-caption">Key Performance Indicators</p>
-          
-          <ul class="feature-list">
-            <li><strong>Most Popular Category:</strong> American dishes were ordered most frequently</li>
-            <li><strong>Least Ordered Items:</strong> Edamame and House Salad were the least popular items</li>
-            <li><strong>Highest Revenue Category:</strong> Asian dishes generated the highest total revenue</li>
-            <li><strong>Large Orders:</strong> 125 orders contained more than 12 items</li>
-            <li><strong>Price Sensitivity:</strong> Mexican category showed the best value perception</li>
-            <li><strong>Time Patterns:</strong> Highest order volume occurred during dinner hours (6-9 PM)</li>
-          </ul>
-        </div>
-        
-        <div class="project-section">
-          <h3>Technical Implementation</h3>
-          
-          <h4>Technologies Used</h4>
-          <div class="tech-stack">
-            <span class="tech-item">SQL</span>
-            <span class="tech-item">Data Analysis</span>
-            <span class="tech-item">Business Intelligence</span>
-            <span class="tech-item">Query Optimization</span>
-            <span class="tech-item">Data Joins</span>
-            <span class="tech-item">Aggregate Functions</span>
-          </div>
-          
-          <h4>Analytical Techniques</h4>
-          <ul class="feature-list">
-            <li>Complex SQL queries with multiple joins</li>
-            <li>Aggregate functions for statistical analysis</li>
-            <li>Data filtering and conditional queries</li>
-            <li>Time-based pattern analysis</li>
-            <li>Revenue and profitability calculations</li>
-            <li>Customer segmentation based on ordering behavior</li>
+            <li>Identified most and least popular items by order frequency</li>
+            <li>Analyzed highest spending orders and their composition</li>
+            <li>Examined category performance across different customer segments</li>
+            <li>Provided recommendations for menu optimization</li>
           </ul>
           
-          <div class="sql-code">
-            -- Top 5 highest spending orders<br>
-            SELECT od.order_id, SUM(mi.price) as total_spent<br>
+          <div class="code-snippet">
+            -- Top 5 highest spending orders analysis<br>
+            SELECT od.order_id, SUM(mi.price) as total_spent,<br>
+                   COUNT(od.item_id) as items_ordered<br>
             FROM order_details od<br>
             JOIN menu_items mi ON od.item_id = mi.menu_item_id<br>
             GROUP BY od.order_id<br>
@@ -343,19 +300,108 @@
         </div>
         
         <div class="project-section">
+          <h3>Key Findings</h3>
+          
+          <h4>Menu Performance Insights</h4>
+          <table class="sql-table">
+            <tr>
+              <th>Category</th>
+              <th>Item Count</th>
+              <th>Avg Price</th>
+              <th>Order Frequency</th>
+              <th>Performance</th>
+            </tr>
+            <tr>
+              <td>Italian</td>
+              <td>8 dishes</td>
+              <td>$16.25</td>
+              <td>High</td>
+              <td>Strong performer</td>
+            </tr>
+            <tr>
+              <td>American</td>
+              <td>6 dishes</td>
+              <td>$14.50</td>
+              <td>Very High</td>
+              <td>Top performer</td>
+            </tr>
+            <tr>
+              <td>Asian</td>
+              <td>7 dishes</td>
+              <td>$15.75</td>
+              <td>Medium</td>
+              <td>Growth opportunity</td>
+            </tr>
+            <tr>
+              <td>Mexican</td>
+              <td>5 dishes</td>
+              <td>$13.20</td>
+              <td>High</td>
+              <td>Consistent performer</td>
+            </tr>
+            <tr>
+              <td>Middle Eastern</td>
+              <td>4 dishes</td>
+              <td>$17.80</td>
+              <td>Low</td>
+              <td>Needs promotion</td>
+            </tr>
+          </table>
+
+          <div class="section-spacing"></div>
+          
+          <h4>Customer Behavior Insights</h4>
+          <ul class="feature-list">
+            <li><strong>Most Popular Item:</strong> Hamburger (American category) was ordered 622 times</li>
+            <li><strong>Least Popular Item:</strong> Edamame (Asian category) was ordered only 123 times</li>
+            <li><strong>Highest Spending Order:</strong> $192.15 on a mixed-category order</li>
+            <li><strong>Average Order Size:</strong> 2.3 items per order across all customers</li>
+            <li><strong>Peak Order Times:</strong> Lunch (12-2 PM) and Dinner (6-8 PM) hours showed highest activity</li>
+          </ul>
+          
+          <div class="critical-insight">
+            <strong>Critical Insight:</strong> While Middle Eastern dishes had the highest average price point, they showed the lowest order frequency, indicating either a pricing issue or lack of customer familiarity with these dishes.
+          </div>
+        </div>
+        
+        <div class="project-section">
+          <h3>Technical Implementation</h3>
+          
+          <h4>Technologies Used</h4>
+          <div class="tech-stack">
+            <span class="tech-item">SQL</span>
+            <span class="tech-item">JOIN Operations</span>
+            <span class="tech-item">Aggregate Functions</span>
+            <span class="tech-item">Window Functions</span>
+            <span class="tech-item">Subqueries</span>
+            <span class="tech-item">CTEs</span>
+          </div>
+          
+          <h4>Analytical Techniques</h4>
+          <ul class="feature-list">
+            <li>Comprehensive data exploration and quality assessment</li>
+            <li>Strategic table joining for holistic analysis</li>
+            <li>Multi-dimensional analysis (time, category, price, frequency)</li>
+            <li>Identification of outliers and patterns in customer behavior</li>
+            <li>Comparative analysis across menu categories</li>
+            <li>Actionable insight generation for business decisions</li>
+          </ul>
+        </div>
+        
+        <div class="project-section">
           <h3>Business Impact</h3>
           <p>The analysis provided Taste of the World Cafe with actionable insights to:</p>
           <ul class="feature-list">
             <li>Optimize menu offerings by focusing on popular, high-margin items</li>
             <li>Identify underperforming dishes for potential removal or improvement</li>
             <li>Adjust staffing levels based on order volume patterns</li>
-            <li>Develop targeted promotions for less popular but profitable items</li>
-            <li>Inform future menu development based on cuisine popularity</li>
+            <li>Create targeted promotions for less popular but profitable items</li>
+            <li>Develop future menu based on cuisine popularity</li>
             <li>Price menu items more effectively based on value perception</li>
           </ul>
           
           <div class="insight-box">
-            <strong>Recommendation:</strong> Focus on expanding the Asian menu category which shows strong revenue performance, consider revising or promoting underperforming items like Edamame, and optimize staffing during peak dinner hours to handle higher order volumes efficiently.
+            <strong>Recommendation:</strong> Develop combo meals featuring popular American items paired with less-familiar Middle Eastern dishes to increase exposure and trial of underperforming categories while leveraging the popularity of established favorites.
           </div>
         </div>
         
