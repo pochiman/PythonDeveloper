@@ -86,39 +86,28 @@
     margin-right: 10px;
   }
   
-  .indicator-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
+  .analysis-table {
+    width: 100%;
+    border-collapse: collapse;
     margin: 20px 0;
   }
   
-  .indicator-card {
-    background: #f9f9f9;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 15px;
-    text-align: center;
+  .analysis-table th, .analysis-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
   }
   
-  .indicator-value {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #4a89dc;
+  .analysis-table th {
+    background-color: #f2f2f2;
   }
   
-  .indicator-label {
-    font-size: 0.9em;
-    color: #666;
+  .analysis-table tr:nth-child(even) {
+    background-color: #f9f9f9;
   }
-  
-  .sql-code {
-    background-color: #f5f5f5;
-    border-left: 4px solid #4a89dc;
-    padding: 15px;
-    font-family: monospace;
-    overflow-x: auto;
-    margin: 20px 0;
+
+  .section-spacing {
+    margin-top: 30px;
   }
 </style>
 </head>
@@ -148,20 +137,39 @@
         </ul>
 
         <ul class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
-          <li><a href="./work001.html" title="">001</a></li>
-          <li><a href="./work002.html" title="">002</a></li>
-          <li><a href="./work003.html" title="">003</a></li>
-          <li><a href="./work004.html" title="">004</a></li>
-          <li><a href="./work005.html" title="">005</a></li>
-          <li><a href="./work006.html" title="">006</a></li>
-          <li><a href="./work007.html" title="">007</a></li>
-          <li><a href="./work008.html" title="">008</a></li>
-          <li><a href="./work009.html" title="">009</a></li>
-          <li><a href="./work010.html" title="">010</a></li>
-          <li><a href="./work011.html" title="">011</a></li>
-          <li><a href="./work012.html" title="">012</a></li>
-          <li><a href="./work013.html" title="">013</a></li>
-          <li><a href="./work014.html" title="" class="active">014</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              014 <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="./works.html">All Projects</a></li>
+              <li class="divider"></li>
+              <li><a href="./work001.html">001 : Algorithmic Forex Trading</a></li>
+              <li><a href="./work002.html">002 : AirBnB Listing Analysis</a></li>
+              <li><a href="./work003.html">003 : Electricity Usage Analysis</a></li>
+              <li><a href="./work004.html">004 : Customer Data Preparation</a></li>
+              <li><a href="./work005.html">005 : Customer Classification</a></li>
+              <li><a href="./work006.html">006 : Customer Segmentation</a></li>
+              <li><a href="./work007.html">007 : Global Video Game Sales</a></li>
+              <li><a href="./work008.html">008 : Predicting Fuel Economy</a></li>
+              <li><a href="./work009.html">009 : World Economic Report</a></li>
+              <li><a href="./work010.html">010 : Restaurant Order Analysis</a></li>
+              <li><a href="./work011.html">011 : Motor Vehicle Thefts</a></li>
+              <li><a href="./work012.html">012 : Baby Name Trend Analysis</a></li>
+              <li><a href="./work013.html">013 : Coffee Shop Dashboard</a></li>
+              <li><a href="./work014.html">014 : Traffic Safety Analysis</a></li>
+              <li><a href="./work015.html">015 : Customer Complaint Tracking</a></li>
+              <li><a href="./work016.html">016 : Global Electronics Retailer</a></li>
+              <li><a href="./work017.html">017 : HR Survey Analysis</a></li>
+              <li><a href="./work018.html">018 : Manufacturing Downtime</a></li>
+              <li><a href="./work019.html">019 : MoMA Art Explorer</a></li>
+              <li><a href="./work020.html">020 : CrossFit Games Analysis</a></li>
+              <li><a href="./work021.html">021 : Global CO2 Emissions</a></li>
+              <li><a href="./work022.html">022 : Supply Chain Shipping</a></li>
+              <li><a href="./work023.html">023 : CRM Sales Dashboard</a></li>
+              <li><a href="./work024.html">024 : Stock Market Tracker</a></li>
+            </ul>
+          </li>
         </ul>
       </div> 
     </div>
@@ -176,7 +184,7 @@
           <div class="text-center">
             <h1 class="h2">014 : Traffic Safety Analysis</h1>
           </div>
-          <p class="text-center">Comprehensive analysis of NYC traffic accident data to identify patterns, trends, and contributing factors for improved public safety initiatives</p>
+          <p class="text-center">Comprehensive analysis of NYC traffic accident data to identify patterns, trends, and contributing factors for improved public safety</p>
           
           <div class="text-center">
             <a href="https://github.com/pochiman/Traffic_Safety_Analysis" target="_blank" class="github-btn">View on GitHub</a>
@@ -184,11 +192,9 @@
           
           <div class="tech-stack text-center">
             <span class="tech-item">Excel</span>
-            <span class="tech-item">Data Analysis</span>
-            <span class="tech-item">Data Visualization</span>
-            <span class="tech-item">Public Safety</span>
-            <span class="tech-item">Pattern Recognition</span>
-            <span class="tech-item">Trend Analysis</span>
+            <span class="tech-item">PivotTables</span>
+            <span class="tech-item">PivotCharts</span>
+            <span class="tech-item">Slicers</span>
           </div>
         </div>
       </div>
@@ -211,7 +217,7 @@
           <h3>Project Overview</h3>
           <p>This project involved analyzing New York City traffic accident data from January 2021 to April 2023 to identify patterns, trends, and contributing factors. The analysis helped the NYPD develop targeted public safety initiatives to prevent future accidents and improve road safety across the city.</p>
           
-          <p>The project demonstrates my expertise in traffic safety analytics, temporal pattern recognition, and data-driven public policy recommendations.</p>
+          <p>The project demonstrates advanced Excel skills including data cleaning, pivot table analysis, sophisticated chart creation, and actionable insights generation for public safety initiatives.</p>
         </div>
         
         <div class="project-section">
@@ -235,15 +241,6 @@
             <li>Applied professional formatting for clear visualization</li>
           </ul>
           
-          <div class="sql-code">
-            <!-- Representing data processing steps -->
-            Data Processing Steps:
-            - Filter: Date Range = Jan 2021 - Mar 2023
-            - Group By: Year, Month
-            - Calculate: Count of Collision ID
-            - Visualize: Multi-line chart by year
-          </div>
-          
           <h4><span class="objective-number">2</span> Weekly Trend Visualization</h4>
           <ul class="feature-list">
             <li>Extracted weekday and hour from date/time columns</li>
@@ -261,50 +258,53 @@
             <li>Compared factors for all accidents vs. fatal accidents specifically</li>
             <li>Identified most dangerous streets and their contribution percentages</li>
           </ul>
-          
-          <div class="sql-code">
-            <!-- Representing analysis formulas -->
-            Dangerous Collision % Formula:
-            = (Injury_Collisions + Fatal_Collisions) / Total_Collisions
-            
-            Top Factors Analysis:
-            - Sort contributing factors by collision count (descending)
-            - Filter top 10 factors
-            - Calculate danger percentage for each
-          </div>
         </div>
         
         <div class="project-section">
           <h3>Key Findings</h3>
           
-          <div class="indicator-grid">
-            <div class="indicator-card">
-              <div class="indicator-value">27</div>
-              <div class="indicator-label">Months Analyzed</div>
-            </div>
-            <div class="indicator-card">
-              <div class="indicator-value">Weekdays</div>
-              <div class="indicator-label">Peak Accident Days</div>
-            </div>
-            <div class="indicator-card">
-              <div class="indicator-value">3-6 PM</div>
-              <div class="indicator-label">Peak Accident Hours</div>
-            </div>
-            <div class="indicator-card">
-              <div class="indicator-value">Driver Inattention</div>
-              <div class="indicator-label">Top Factor</div>
-            </div>
-          </div>
+          <h4>Seasonal Patterns</h4>
+          <table class="analysis-table">
+            <tr>
+              <th>Pattern Type</th>
+              <th>Key Insight</th>
+              <th>Implication</th>
+            </tr>
+            <tr>
+              <td>Monthly Trends</td>
+              <td>Consistent peak in accidents during summer months (June-August)</td>
+              <td>Increased traffic volume and tourism during summer requires enhanced safety measures</td>
+            </tr>
+            <tr>
+              <td>Year-over-Year</td>
+              <td>Similar patterns across 2021 and 2022, validating seasonal consistency</td>
+              <td>Predictable patterns allow for proactive resource allocation</td>
+            </tr>
+            <tr>
+              <td>Lowest Frequency</td>
+              <td>Winter months (January-February) show reduced accident rates</td>
+              <td>Potential correlation with reduced outdoor activities and travel</td>
+            </tr>
+          </table>
+
+          <div class="section-spacing"></div>
           
-          <p class="img-caption">Key Traffic Safety Insights</p>
-          
+          <h4>Weekly & Daily Patterns</h4>
           <ul class="feature-list">
-            <li><strong>Seasonal Patterns:</strong> Higher accident rates in winter months (November-February) due to weather conditions</li>
-            <li><strong>Weekly Trends:</strong> Weekdays showed significantly higher accident rates than weekends, with Thursday being the peak day</li>
-            <li><strong>Time Patterns:</strong> Afternoon rush hours (3-6 PM) accounted for the highest concentration of accidents</li>
-            <li><strong>Contributing Factors:</strong> Driver inattention/distraction was the leading factor, followed by following too closely</li>
-            <li><strong>Dangerous Locations:</strong> Specific streets in Manhattan and Brooklyn accounted for disproportionate accident rates</li>
-            <li><strong>Fatal Accidents:</strong> While these accidents were less common, their contributing factors differed from the overall pattern</li>
+            <li><strong>Peak Hours:</strong> Highest accident frequency during evening rush hours (4-7 PM)</li>
+            <li><strong>Weekday Patterns:</strong> Fridays showed the highest accident rates among weekdays</li>
+            <li><strong>Weekend Trends:</strong> Late-night hours (11 PM-2 AM) on weekends showed elevated risk</li>
+            <li><strong>Commute Correlation:</strong> Clear correlation with typical work commute patterns</li>
+          </ul>
+
+          <div class="section-spacing"></div>
+          
+          <h4>Contributing Factors Analysis</h4>
+          <ul class="feature-list">
+            <li><strong>Most Common Factor:</strong> "Driver Inattention/Distraction" was the leading cause</li>
+            <li><strong>High-Risk Factors:</strong> "Following Too Closely" showed high percentage of dangerous collisions</li>
+            <li><strong>Fatal Accident Factors:</strong> A different pattern emerged for fatal accidents vs. overall accidents</li>
+            <li><strong>Preventable Factors:</strong> Majority of top factors involved preventable driver behaviors</li>
           </ul>
         </div>
         
@@ -314,34 +314,31 @@
           <h4>Technologies Used</h4>
           <div class="tech-stack">
             <span class="tech-item">Excel</span>
-            <span class="tech-item">Data Analysis</span>
-            <span class="tech-item">Data Visualization</span>
-            <span class="tech-item">Pattern Recognition</span>
-            <span class="tech-item">Statistical Analysis</span>
-            <span class="tech-item">Public Safety Analytics</span>
+            <span class="tech-item">PivotTables</span>
+            <span class="tech-item">PivotCharts</span>
+            <span class="tech-item">Slicers</span>
           </div>
           
           <h4>Analytical Techniques</h4>
           <ul class="feature-list">
-            <li>Temporal analysis of accident patterns</li>
-            <li>Heatmap visualization for time-based data</li>
-            <li>Contributing factor segmentation and ranking</li>
-            <li>Danger percentage calculations</li>
-            <li>Comparative analysis of different accident severity levels</li>
-            <li>Data-driven policy recommendation development</li>
+            <li>Time-series analysis for seasonal pattern identification</li>
+            <li>Multi-dimensional analysis using pivot tables</li>
+            <li>Custom heatmap creation for temporal pattern visualization</li>
+            <li>Percentage calculations and comparative analysis</li>
+            <li>Data filtering and segmentation for focused insights</li>
+            <li>Risk prioritization based on frequency and severity metrics</li>
           </ul>
         </div>
         
         <div class="project-section">
           <h3>Business Impact</h3>
-          <p>The Traffic Safety Analysis provided the NYPD with actionable insights to:</p>
+          <p>The analysis provided the NYPD with actionable insights to:</p>
           <ul class="feature-list">
-            <li>Develop targeted enforcement strategies for high-risk times and locations</li>
-            <li>Implement public awareness campaigns focused on leading contributing factors</li>
-            <li>Optimize police resource allocation based on temporal accident patterns</li>
-            <li>Inform infrastructure improvements at high-accident locations</li>
-            <li>Create evidence-based traffic safety policies and regulations</li>
-            <li>Measure the effectiveness of safety initiatives over time</li>
+            <li>Optimize police patrol schedules based on identified high-risk time periods</li>
+            <li>Focus on specific contributing factors during peak accident hours</li>
+            <li>Develop safety campaigns addressing the most common preventable factors</li>
+            <li>Identify high-accident locations in need of engineering interventions</li>
+            <li>Prepare for increased summer accident rates with proactive measures</li>
           </ul>
           
           <div class="insight-box">
