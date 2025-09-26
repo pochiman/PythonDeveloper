@@ -15,7 +15,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./static/assets/apple-icon-180x180.png">
   <link href="./static/assets/favicon.ico" rel="icon">
 
-  <title>World Economic Report | Data Projects</title>  
+  <title>World Economic Report | Global Economic Analysis</title>  
 
 <link href="./static/main.3f6952e4.css" rel="stylesheet">
 <style>
@@ -86,30 +86,28 @@
     margin-right: 10px;
   }
   
-  .indicator-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
     margin: 20px 0;
   }
   
-  .indicator-card {
-    background: #f9f9f9;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 15px;
-    text-align: center;
+  .data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
   }
   
-  .indicator-value {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #4a89dc;
+  .data-table th {
+    background-color: #f2f2f2;
   }
   
-  .indicator-label {
-    font-size: 0.9em;
-    color: #666;
+  .data-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .section-spacing {
+    margin-top: 30px;
   }
 </style>
 </head>
@@ -139,15 +137,39 @@
         </ul>
 
         <ul class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
-          <li><a href="./work001.html" title="">001</a></li>
-          <li><a href="./work002.html" title="">002</a></li>
-          <li><a href="./work003.html" title="">003</a></li>
-          <li><a href="./work004.html" title="">004</a></li>
-          <li><a href="./work005.html" title="">005</a></li>
-          <li><a href="./work006.html" title="">006</a></li>
-          <li><a href="./work007.html" title="">007</a></li>
-          <li><a href="./work008.html" title="">008</a></li>
-          <li><a href="./work009.html" title="" class="active">009</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              009 <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="./works.html">All Projects</a></li>
+              <li class="divider"></li>
+              <li><a href="./work001.html">001 : Algorithmic Forex Trading</a></li>
+              <li><a href="./work002.html">002 : AirBnB Listing Analysis</a></li>
+              <li><a href="./work003.html">003 : Electricity Usage Analysis</a></li>
+              <li><a href="./work004.html">004 : Customer Data Preparation</a></li>
+              <li><a href="./work005.html">005 : Customer Classification</a></li>
+              <li><a href="./work006.html">006 : Customer Segmentation</a></li>
+              <li><a href="./work007.html">007 : Global Video Game Sales</a></li>
+              <li><a href="./work008.html">008 : Predicting Fuel Economy</a></li>
+              <li><a href="./work009.html">009 : World Economic Report</a></li>
+              <li><a href="./work010.html">010 : Restaurant Order Analysis</a></li>
+              <li><a href="./work011.html">011 : Motor Vehicle Thefts</a></li>
+              <li><a href="./work012.html">012 : Baby Name Trend Analysis</a></li>
+              <li><a href="./work013.html">013 : Coffee Shop Dashboard</a></li>
+              <li><a href="./work014.html">014 : Traffic Safety Analysis</a></li>
+              <li><a href="./work015.html">015 : Customer Complaint Tracking</a></li>
+              <li><a href="./work016.html">016 : Global Electronics Retailer</a></li>
+              <li><a href="./work017.html">017 : HR Survey Analysis</a></li>
+              <li><a href="./work018.html">018 : Manufacturing Downtime</a></li>
+              <li><a href="./work019.html">019 : MoMA Art Explorer</a></li>
+              <li><a href="./work020.html">020 : CrossFit Games Analysis</a></li>
+              <li><a href="./work021.html">021 : Global CO2 Emissions</a></li>
+              <li><a href="./work022.html">022 : Supply Chain Shipping</a></li>
+              <li><a href="./work023.html">023 : CRM Sales Dashboard</a></li>
+              <li><a href="./work024.html">024 : Stock Market Tracker</a></li>
+            </ul>
+          </li>
         </ul>
       </div> 
     </div>
@@ -162,7 +184,7 @@
           <div class="text-center">
             <h1 class="h2">009 : World Economic Report</h1>
           </div>
-          <p class="text-center">Comprehensive analysis of global economic indicators from 1960-2021 with interactive visualizations</p>
+          <p class="text-center">Comprehensive analysis of global economic trends using World Bank and UN data to create an infographic-style report on economic development</p>
           
           <div class="text-center">
             <a href="https://github.com/pochiman/World_Economic_Report" target="_blank" class="github-btn">View on GitHub</a>
@@ -171,11 +193,8 @@
           <div class="tech-stack text-center">
             <span class="tech-item">Python</span>
             <span class="tech-item">Pandas</span>
-            <span class="tech-item">Data Visualization</span>
-            <span class="tech-item">Economic Analysis</span>
-            <span class="tech-item">Matplotlib</span>
             <span class="tech-item">Seaborn</span>
-            <span class="tech-item">Data Journalism</span>
+            <span class="tech-item">Matplotlib</span>
             <span class="tech-item">Jupyter</span>
           </div>
         </div>
@@ -199,12 +218,12 @@
           <h3>Project Overview</h3>
           <p>This project involved analyzing global economic indicators from the World Bank and United Nations to create a comprehensive report on worldwide economic trends from 1960-2021. The analysis included GDP growth, population trends, Human Development Index (HDI) comparisons, and relationships between economic factors and quality of life indicators.</p>
           
-          <p>The project demonstrates my expertise in economic data analysis, multi-source data integration, and creating compelling visualizations for data journalism.</p>
+          <p>The analysis covered economic indicators from 1960-2018 and provided insights into population growth, GDP trends, human development progress, and relationships between various economic factors.</p>
         </div>
         
         <div class="project-section">
           <h3>Business Context</h3>
-          <p>The Numbers magazine needed to transform complex World Bank and UN economic data into an accessible, infographic-style report that would help readers understand major global economic trends and development patterns over six decades.</p>
+          <p>The World Bank's annual economic report contains crucial data on global economic performance, but the raw data requires significant processing and analysis to extract meaningful insights. This project transformed complex economic datasets into accessible visualizations that help readers understand global economic trends, regional disparities, and development progress.</p>
           
           <div class="insight-box">
             <strong>Primary Question:</strong> What are the major global economic trends from 1960-2021, and how have different regions progressed in terms of development, GDP growth, and quality of life indicators?
@@ -257,34 +276,45 @@
         <div class="project-section">
           <h3>Key Findings</h3>
           
-          <div class="indicator-grid">
-            <div class="indicator-card">
-              <div class="indicator-value">6.1×</div>
-              <div class="indicator-label">Global GDP Growth (1960-2018)</div>
-            </div>
-            <div class="indicator-card">
-              <div class="indicator-value">2.8×</div>
-              <div class="indicator-label">World Population Increase</div>
-            </div>
-            <div class="indicator-card">
-              <div class="indicator-value">22%</div>
-              <div class="indicator-label">HDI Improvement (1990-2021)</div>
-            </div>
-            <div class="indicator-card">
-              <div class="indicator-value">0.89</div>
-              <div class="indicator-label">Highest Regional HDI (Europe)</div>
-            </div>
-          </div>
+          <h4>Major Economic Trends Identified</h4>
+          <table class="data-table">
+            <tr>
+              <th>Trend</th>
+              <th>Insight</th>
+              <th>Impact</th>
+            </tr>
+            <tr>
+              <td>GDP Growth Patterns</td>
+              <td>East Asia & Pacific showed the most significant GDP growth since 2000</td>
+              <td>Shift in global economic power towards Asian economies</td>
+            </tr>
+            <tr>
+              <td>Population Dynamics</td>
+              <td>Sub-Saharan Africa experienced the highest population growth rate</td>
+              <td>Increasing demographic importance of African markets</td>
+            </tr>
+            <tr>
+              <td>HDI Progress</td>
+              <td>Europe & Central Asia maintained the highest average HDI</td>
+              <td>Persistent development gap between regions</td>
+            </tr>
+            <tr>
+              <td>Life Expectancy Correlation</td>
+              <td>Strong positive correlation between GDP per capita and life expectancy</td>
+              <td>Economic development directly impacts health outcomes</td>
+            </tr>
+          </table>
+
+          <div class="section-spacing"></div>
           
-          <p class="img-caption">Key Economic Indicators</p>
-          
+          <h4>Regional Development Insights</h4>
           <ul class="feature-list">
-            <li><strong>Asian Economic Rise:</strong> East Asia & Pacific region showed the most dramatic GDP growth since 1990</li>
-            <li><strong>Population Shifts:</strong> Africa experienced the highest population growth rate while other regions stabilized</li>
-            <li><strong>HDI Convergence:</strong> Developing regions showed significant HDI improvement, narrowing gaps with developed nations</li>
-            <li><strong>Life Expectancy Correlation:</strong> Strong positive relationship between GDP per capita and life expectancy across all regions</li>
-            <li><strong>Energy Development Link:</strong> Electricity consumption strongly correlated with economic development levels</li>
-            <li><strong>Regional Disparities:</strong> Significant economic and development gaps persist between regions despite overall progress</li>
+            <li><strong>East Asia & Pacific:</strong> Rapid economic growth with improving HDI scores, though starting from lower base</li>
+            <li><strong>Europe & Central Asia:</strong> Highest HDI levels with stable but slower economic growth</li>
+            <li><strong>Latin America & Caribbean:</strong> Moderate growth with significant inequality challenges</li>
+            <li><strong>Middle East & North Africa:</strong> Resource-driven economies with variable development outcomes</li>
+            <li><strong>Sub-Saharan Africa:</strong> Fastest population growth but slowest economic and HDI progress</li>
+            <li><strong>South Asia:</strong> Significant recent economic growth with large population base</li>
           </ul>
         </div>
         
@@ -293,14 +323,11 @@
           
           <h4>Technologies Used</h4>
           <div class="tech-stack">
-            <span class="tech-item">Python 3</span>
+            <span class="tech-item">Python</span>
             <span class="tech-item">Pandas</span>
-            <span class="tech-item">Matplotlib</span>
             <span class="tech-item">Seaborn</span>
-            <span class="tech-item">NumPy</span>
-            <span class="tech-item">Jupyter Notebook</span>
-            <span class="tech-item">Data Visualization</span>
-            <span class="tech-item">Economic Analysis</span>
+            <span class="tech-item">Matplotlib</span>
+            <span class="tech-item">Jupyter</span>
           </div>
           
           <h4>Analytical Techniques</h4>
@@ -311,7 +338,7 @@
             <li>Correlation and relationship analysis</li>
             <li>Data normalization for cross-country comparison</li>
             <li>Visual storytelling for data journalism</li>
-            <li>Infographic design and layout</li>
+            <li>Infographic design and layout composition</li>
           </ul>
         </div>
         
@@ -320,15 +347,15 @@
           <p>The World Economic Report provided The Numbers magazine with:</p>
           <ul class="feature-list">
             <li>Comprehensive analysis of global economic trends over six decades</li>
-            <li>Data-driven insights for feature articles on economic development</li>
-            <li>Visualizations that made complex economic data accessible to readers</li>
+            <li>Data-driven insights into regional development disparities</li>
+	        <li>Visualizations that made complex economic data accessible to readers</li>
             <li>Understanding of regional development patterns and disparities</li>
             <li>Evidence-based content for reporting on global economic issues</li>
             <li>Foundation for ongoing economic reporting and analysis</li>
           </ul>
           
           <div class="insight-box">
-            <strong>Recommendation:</strong> Focus reporting on the remarkable economic rise of Asian economies, continued development challenges in certain regions, and the strong relationships between economic indicators and quality of life measures. Use these insights to inform readers about global economic trends and their implications for future development.
+            <strong>Recommendation:</strong> Focus reporting on the rapid growth in East Asia and the demographic transition in Africa, while highlighting the persistent development gaps that require targeted international cooperation and policy interventions.
           </div>
         </div>
         
