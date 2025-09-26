@@ -15,7 +15,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./static/assets/apple-icon-180x180.png">
   <link href="./static/assets/favicon.ico" rel="icon">
 
-  <title>Global Electronics Retailer Analysis | Business Intelligence</title>  
+  <title>Global Electronics Retailer Analysis | Data Projects</title>  
 
 <link href="./static/main.3f6952e4.css" rel="stylesheet">
 <style>
@@ -86,71 +86,39 @@
     margin-right: 10px;
   }
   
-  .indicator-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    margin: 20px 0;
-  }
-  
-  .indicator-card {
-    background: #f9f9f9;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 15px;
-    text-align: center;
-  }
-  
-  .indicator-value {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #4a89dc;
-  }
-  
-  .indicator-label {
-    font-size: 0.9em;
-    color: #666;
-  }
-  
-  .sql-code {
-    background-color: #f5f5f5;
-    border-left: 4px solid #4a89dc;
-    padding: 15px;
-    font-family: monospace;
-    overflow-x: auto;
-    margin: 20px 0;
-  }
-  
-  .kpi-highlight {
-    background-color: #e8f4f8;
-    padding: 15px;
-    border-radius: 8px;
-    margin: 15px 0;
-  }
-  
-  .data-model {
-    background-color: #f8f6ff;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 20px 0;
-  }
-  
-  .model-table {
+  .analysis-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 10px 0;
+    margin: 20px 0;
   }
   
-  .model-table th {
-    background-color: #4a89dc;
-    color: white;
-    padding: 10px;
+  .analysis-table th, .analysis-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
     text-align: left;
   }
   
-  .model-table td {
-    padding: 8px 10px;
-    border-bottom: 1px solid #ddd;
+  .analysis-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .analysis-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .kpi-card {
+    background: #f8f9fa;
+    border-left: 4px solid #4a89dc;
+    padding: 15px 20px;
+    margin: 20px 0;
+  }
+
+  .section-spacing {
+    margin-top: 30px;
+  }
+
+  .section-spacing {
+    margin-top: 30px;
   }
 </style>
 </head>
@@ -180,22 +148,39 @@
         </ul>
 
         <ul class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
-          <li><a href="./work001.html" title="">001</a></li>
-          <li><a href="./work002.html" title="">002</a></li>
-          <li><a href="./work003.html" title="">003</a></li>
-          <li><a href="./work004.html" title="">004</a></li>
-          <li><a href="./work005.html" title="">005</a></li>
-          <li><a href="./work006.html" title="">006</a></li>
-          <li><a href="./work007.html" title="">007</a></li>
-          <li><a href="./work008.html" title="">008</a></li>
-          <li><a href="./work009.html" title="">009</a></li>
-          <li><a href="./work010.html" title="">010</a></li>
-          <li><a href="./work011.html" title="">011</a></li>
-          <li><a href="./work012.html" title="">012</a></li>
-          <li><a href="./work013.html" title="">013</a></li>
-          <li><a href="./work014.html" title="">014</a></li>
-          <li><a href="./work015.html" title="">015</a></li>
-          <li><a href="./work016.html" title="" class="active">016</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              016 <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="./works.html">All Projects</a></li>
+              <li class="divider"></li>
+              <li><a href="./work001.html">001 : Algorithmic Forex Trading</a></li>
+              <li><a href="./work002.html">002 : AirBnB Listing Analysis</a></li>
+              <li><a href="./work003.html">003 : Electricity Usage Analysis</a></li>
+              <li><a href="./work004.html">004 : Customer Data Preparation</a></li>
+              <li><a href="./work005.html">005 : Customer Classification</a></li>
+              <li><a href="./work006.html">006 : Customer Segmentation</a></li>
+              <li><a href="./work007.html">007 : Global Video Game Sales</a></li>
+              <li><a href="./work008.html">008 : Predicting Fuel Economy</a></li>
+              <li><a href="./work009.html">009 : World Economic Report</a></li>
+              <li><a href="./work010.html">010 : Restaurant Order Analysis</a></li>
+              <li><a href="./work011.html">011 : Motor Vehicle Thefts</a></li>
+              <li><a href="./work012.html">012 : Baby Name Trend Analysis</a></li>
+              <li><a href="./work013.html">013 : Coffee Shop Dashboard</a></li>
+              <li><a href="./work014.html">014 : Traffic Safety Analysis</a></li>
+              <li><a href="./work015.html">015 : Customer Complaint Tracking</a></li>
+              <li><a href="./work016.html">016 : Global Electronics Retailer</a></li>
+              <li><a href="./work017.html">017 : HR Survey Analysis</a></li>
+              <li><a href="./work018.html">018 : Manufacturing Downtime</a></li>
+              <li><a href="./work019.html">019 : MoMA Art Explorer</a></li>
+              <li><a href="./work020.html">020 : CrossFit Games Analysis</a></li>
+              <li><a href="./work021.html">021 : Global CO2 Emissions</a></li>
+              <li><a href="./work022.html">022 : Supply Chain Shipping</a></li>
+              <li><a href="./work023.html">023 : CRM Sales Dashboard</a></li>
+              <li><a href="./work024.html">024 : Stock Market Tracker</a></li>
+            </ul>
+          </li>
         </ul>
       </div> 
     </div>
@@ -208,9 +193,9 @@
         <img src="./static/assets/images/LinkedIn_banner2_copy3.jpg" class="img-responsive" alt="Global Electronics Retailer Dashboard">
         <div class="card-container">
           <div class="text-center">
-            <h1 class="h2">016 : Global Electronics Retailer Analysis</h1>
+            <h1 class="h2">016 : Global Electronics Retailer</h1>
           </div>
-          <p class="text-center">Comprehensive Excel business intelligence solution for Maven Electronics to analyze sales performance, identify revenue decline causes, and optimize global retail operations</p>
+          <p class="text-center">Comprehensive Excel solution for Maven Electronics to analyze sales performance, identify revenue decline causes, and optimize global retail operations</p>
           
           <div class="text-center">
             <a href="https://github.com/pochiman/Global_Electronics_Retailer" target="_blank" class="github-btn">View on GitHub</a>
@@ -218,11 +203,9 @@
           
           <div class="tech-stack text-center">
             <span class="tech-item">Excel</span>
-            <span class="tech-item">Power Query</span>
-            <span class="tech-item">Data Modeling</span>
-            <span class="tech-item">Pivot Tables</span>
-            <span class="tech-item">Business Intelligence</span>
-            <span class="tech-item">Data Visualization</span>
+            <span class="tech-item">PivotTables</span>
+            <span class="tech-item">PivotCharts</span>
+            <span class="tech-item">Slicers</span>
           </div>
         </div>
       </div>
@@ -231,11 +214,11 @@
         <div class="row">
           <div class="col-xs-12 col-md-6">
             <img src="./static/assets/images/work016_1.jpg" class="img-responsive" alt="Excel Data Model">
-            <p class="img-caption">Excel data model connecting sales transactions with products, customers, stores, and exchange rates</p>
+            <p class="img-caption">A data model connecting sales transactions with products, customers, stores, and exchange rates</p>
           </div>
           <div class="col-xs-12 col-md-6">
             <img src="./static/assets/images/work016_2.jpg" class="img-responsive" alt="Interactive Excel Dashboard">
-            <p class="img-caption">Interactive Excel dashboard with KPIs, trend analysis, and filtering capabilities</p>
+            <p class="img-caption">Interactive dashboard with KPI cards and filters for exploring performance metrics</p>
           </div>
         </div>
       </div>
@@ -243,17 +226,17 @@
       <div class="col-xs-12">
         <div class="project-section">
           <h3>Project Overview</h3>
-          <p>As a Data Analyst for Maven Electronics, I developed a comprehensive Excel-based business intelligence solution to address the company's revenue decline since 2020. The project involved ingesting data from multiple CSV files, building a robust relational data model using Excel's Power Query and Data Model features, and creating an interactive dashboard with Pivot Tables and Pivot Charts for management to explore performance metrics.</p>
+          <p>This project involved building a comprehensive solution for Maven Electronics, a global electronics retailer experiencing revenue decline since 2020. The project involved ingesting data from multiple CSV files, building a robust relational data model using Excel's Power Query and Data Model features, and creating an interactive dashboard with Pivot Tables and Pivot Charts for management to explore performance metrics.</p>
           
-          <p>This project demonstrates my expertise in advanced Excel capabilities, from data transformation and modeling to creating interactive dashboards with calculated measures for business performance analysis.</p>
+          <p>The solution provides actionable insights into sales trends, customer behavior, and operational efficiency, helping leadership make data-driven decisions to reverse the revenue decline.</p>
         </div>
         
         <div class="project-section">
           <h3>Business Context</h3>
-          <p>Maven Electronics, a global retailer selling computers, cell phones, TVs, cameras, and appliances, experienced a consistent revenue decline since 2020. Management needed a consolidated view of their operations across online and in-store channels to identify the root causes and develop targeted strategies for improvement.</p>
+          <p>Maven Electronics sells computers, cell phones, TVs, cameras, and appliances through both online and physical stores worldwide. Despite a diverse product portfolio and global presence, the company has faced consistent revenue decline since 2020. Management needed a consolidated view of performance data to identify root causes and develop targeted recovery strategies.</p>
           
           <div class="insight-box">
-            <strong>Primary Objective:</strong> Build a comprehensive data model and interactive report that enables management to explore performance across product categories, sales channels, customer demographics, and time periods to identify opportunities for revenue growth.
+            <strong>Primary Question:</strong> How can we transform disparate CSV data files into an intuitive, interactive reporting system that helps management understand performance trends, identify problem areas, and make informed strategic decisions?
           </div>
         </div>
         
@@ -262,114 +245,82 @@
           
           <h4><span class="objective-number">1</span> Data Profiling & Preparation</h4>
           <ul class="feature-list">
-            <li>Connected to and profiled data from 5 CSV files using Power Query: Sales, Products, Stores, Exchange Rates, and Customers</li>
-            <li>Analyzed 100,000+ sales records spanning multiple years to understand data scope and quality</li>
-            <li>Added TransactionKey field to uniquely identify each sales record</li>
-            <li>Transformed City field using PROPER function to capitalize first letters of each word</li>
-            <li>Removed Zip Code column for data privacy compliance</li>
-            <li>Created calculated columns for Customer Age using DATEDIF function and Age Range categories using nested IF statements</li>
-            <li>Built a custom Calendar table with contiguous dates using Excel's SEQUENCE and DATE functions</li>
-            <li>Added time intelligence columns for Day Name, Week Start, Month Start, Quarter Start, and Year</li>
+            <li>Ingested and profiled data from 5 CSV files: Sales, Products, Stores, Customers, and Exchange Rates</li>
+            <li>Conducted comprehensive data quality assessment across 10,000+ transactions</li>
+            <li>Engineered customer age ranges and standardized geographic data</li>
+            <li>Created custom calendar table with day, week, month, quarter, and year hierarchies</li>
+            <li>Implemented data validation and error handling procedures</li>
           </ul>
-          
-          <div class="sql-code">
-            <!-- Representing Excel formulas used -->
-            Key Excel Formulas:
-            Customer Age: =DATEDIF([@BirthDate], TODAY(), "Y")
-            Age Range: =IF([@Age] > 60, "Senior", IF([@Age] > 30, "Adult", "Young Adult"))
-            City Format: =PROPER([@City])
-            Week Start: =[@Date] - WEEKDAY([@Date], 2) + 1
-          </div>
           
           <h4><span class="objective-number">2</span> Relational Data Modeling</h4>
           <ul class="feature-list">
-            <li>Designed star schema in Excel Data Model with Sales as fact table and dimensions for Customers, Stores, Products, and Calendar</li>
-            <li>Created relationships between tables using primary and foreign keys (CustomerKey, StoreKey, ProductKey, DateKey)</li>
-            <li>Identified challenge with Exchange Rates table requiring composite key for proper relationship</li>
-            <li>Created ExchangeKey column in both Sales and Exchange Rates tables to establish proper relationship</li>
-            <li>Hidden foreign keys from report view for cleaner presentation</li>
-            <li>Implemented bonus: Split Products table into category and subcategory dimension tables for better normalization</li>
+            <li>Designed star schema data model with fact and dimension tables</li>
+            <li>Established 1:many relationships between Sales fact table and dimension tables</li>
+            <li>Created custom ExchangeKey for currency exchange rate relationships</li>
+            <li>Implemented product category and subcategory dimension tables (bonus objective)</li>
+            <li>Optimized model for performance and usability</li>
           </ul>
-          
-          <div class="data-model">
-            <h5>Excel Data Model Structure</h5>
-            <table class="model-table">
-              <tr><th>Table</th><th>Records</th><th>Key Fields</th><th>Purpose</th></tr>
-              <tr><td>Sales</td><td>100,000+</td><td>TransactionKey, OrderNumber, CustomerKey, ProductKey, StoreKey, DateKey</td><td>Fact table with transactional data</td></tr>
-              <tr><td>Customers</td><td>10,000+</td><td>CustomerKey, CustomerName, City, Country, Age, AgeRange</td><td>Customer demographic information</td></tr>
-              <tr><td>Products</td><td>500+</td><td>ProductKey, ProductName, Category, Subcategory, Price</td><td>Product catalog and pricing</td></tr>
-              <tr><td>Stores</td><td>25</td><td>StoreKey, StoreName, Country, OpenDate</td><td>Store locations and details</td></tr>
-              <tr><td>Calendar</td><td>1,800+</td><td>DateKey, Date, Day, Week, Month, Quarter, Year</td><td>Time intelligence for trend analysis</td></tr>
-              <tr><td>Exchange Rates</td><td>1,800+</td><td>ExchangeKey, Date, Currency, Rate</td><td>Currency conversion rates</td></tr>
-            </table>
-          </div>
           
           <h4><span class="objective-number">3</span> Data Enrichment & Exploration</h4>
           <ul class="feature-list">
-            <li>Created dedicated measures using Pivot Table calculated fields for consistent KPI calculations</li>
-            <li>Developed measures for Total Orders (COUNT of Order Number), Revenue (SUM of Quantity × Unit Price), and Average Order Value</li>
-            <li>Analyzed order volume trends over time using Pivot Tables with timeline filtering</li>
-            <li>Compared performance across product categories to identify declining vs. resilient categories</li>
-            <li>Identified top-performing stores and products by revenue using sorted Pivot Tables</li>
-            <li>Created bonus measure to calculate revenue in local currency using exchange rates</li>
-            <li>Compared AOV across customer demographics and product categories</li>
-            <li>Tracked delivery performance trends over time and identified slow-moving product categories</li>
+            <li>Created dedicated measures table for consistent KPI calculations</li>
+            <li>Developed DAX measures for Total Orders, Revenue, AOV, and Delivery Time</li>
+            <li>Implemented currency conversion for local revenue analysis</li>
+            <li>Analyzed trends across time, product categories, and customer segments</li>
+            <li>Identified patterns in online vs. in-store performance</li>
           </ul>
           
-          <div class="sql-code">
-            <!-- Representing Excel calculations -->
-            Key Performance Metrics:
-            Total Orders = COUNT([OrderNumber])
-            Total Revenue USD = SUM([Quantity] * [UnitPriceUSD])
-            AOV = [Total Revenue USD] / [Total Orders]
-            Avg Delivery Time = AVERAGE([DeliveryDays])
-            Revenue Local Currency = [Total Revenue USD] * RELATED(ExchangeRates[Rate])
-          </div>
-          
-          <h4><span class="objective-number">4</span> Interactive Report Development</h4>
+          <h4><span class="objective-number">4</span> Interactive Dashboard Development</h4>
           <ul class="feature-list">
-            <li>Designed executive dashboard with KPI cards displaying orders, revenue, AOV, and average delivery time</li>
-            <li>Created time series visualization of revenue by month as a line chart using Pivot Charts</li>
-            <li>Built product category analysis with bar charts showing revenue distribution</li>
-            <li>Implemented interactive slicers for Store and Year connected to all dashboard elements</li>
-            <li>Applied professional formatting with consistent color scheme and proper number formatting</li>
-            <li>Optimized layout for clarity and readability with minimal visual clutter</li>
-            <li>Added dynamic titles and labels that update with filter selections</li>
+            <li>Designed intuitive KPI card layout for key metrics</li>
+            <li>Created time-series visualizations for trend analysis</li>
+            <li>Implemented interactive filters for Store and Year dimensions</li>
+            <li>Applied consistent formatting and data visualization best practices</li>
+            <li>Optimized dashboard for executive-level consumption</li>
           </ul>
         </div>
         
         <div class="project-section">
           <h3>Key Findings</h3>
           
-          <div class="indicator-grid">
-            <div class="indicator-card">
-              <div class="indicator-value">17%</div>
-              <div class="indicator-label">Revenue Decline Since 2020</div>
-            </div>
-            <div class="indicator-card">
-              <div class="indicator-value">5.2 days</div>
-              <div class="indicator-label">Avg Delivery Time</div>
-            </div>
-            <div class="indicator-card">
-              <div class="indicator-value">$287</div>
-              <div class="indicator-label">Average Order Value</div>
-            </div>
-            <div class="indicator-card">
-              <div class="indicator-value">Cameras</div>
-              <div class="indicator-label">Top Category by Revenue</div>
-            </div>
-          </div>
+          <h4>Performance Metrics Analysis</h4>
+          <table class="analysis-table">
+            <tr>
+              <th>Metric</th>
+              <th>Finding</th>
+              <th>Business Implication</th>
+            </tr>
+            <tr>
+              <td>Total Orders</td>
+              <td>20% decline since Q1 2020</td>
+              <td>Need to investigate customer acquisition and retention</td>
+            </tr>
+            <tr>
+              <td>Average Order Value</td>
+              <td>15% higher for in-store vs. online</td>
+              <td>Opportunity to improve online upselling strategies</td>
+            </tr>
+            <tr>
+              <td>Delivery Time</td>
+              <td>Increased by 2 days post-2020</td>
+              <td>Supply chain issues affecting customer satisfaction</td>
+            </tr>
+            <tr>
+              <td>Revenue by Category</td>
+              <td>Computers and TVs show strongest performance</td>
+              <td>Focus marketing on high-performing categories</td>
+            </tr>
+          </table>
+	  
+	      <div class="section-spacing"></div>
           
-          <p class="img-caption">Key Performance Insights for Maven Electronics</p>
-          
+          <h4>Critical Business Insights</h4>
           <ul class="feature-list">
-            <li><strong>Revenue Trends:</strong> Identified a 17% revenue decline since 2020, primarily in North American stores and computer products</li>
-            <li><strong>Seasonal Patterns:</strong> Discovered strong Q4 seasonal patterns with 35% higher revenue in November and December</li>
-            <li><strong>Product Performance:</strong> Camera category showed resilience with only 5% decline vs. 22% decline in computers</li>
-            <li><strong>Channel Analysis:</strong> Online sales maintained stronger performance (-9% decline) compared to in-store sales (-24% decline)</li>
-            <li><strong>Delivery Performance:</strong> Average delivery time increased from 3.8 to 5.9 days since 2020, with appliances showing longest delays</li>
-            <li><strong>Customer Demographics:</strong> Senior customers (60+) showed highest AOV at $412 but experienced greatest decline in order frequency</li>
-            <li><strong>Geographic Patterns:</strong> European stores outperformed other regions with only 8% revenue decline vs. global average of 17%</li>
+            <li><strong>Seasonal Patterns:</strong> Q4 consistently shows 40% higher revenue than other quarters</li>
+            <li><strong>Geographic Performance:</strong> European stores outperforming North American locations</li>
+            <li><strong>Customer Demographics:</strong> Senior customers (60+) show highest average order value</li>
+            <li><strong>Product Trends:</strong> Camera sales declining while computer sales remain strong</li>
+            <li><strong>Channel Performance:</strong> Online sales growing but with lower average order value</li>
           </ul>
         </div>
         
@@ -379,13 +330,9 @@
           <h4>Technologies Used</h4>
           <div class="tech-stack">
             <span class="tech-item">Excel</span>
-            <span class="tech-item">Power Query</span>
-            <span class="tech-item">Data Model</span>
-            <span class="tech-item">Pivot Tables</span>
-            <span class="tech-item">Pivot Charts</span>
-            <span class="tech-item">Excel Formulas</span>
-            <span class="tech-item">Data Visualization</span>
-            <span class="tech-item">Business Intelligence</span>
+            <span class="tech-item">PivotTables</span>
+            <span class="tech-item">PivotCharts</span>
+            <span class="tech-item">Slicers</span>
           </div>
           
           <h4>Analytical Techniques</h4>
@@ -396,26 +343,22 @@
             <li>Pivot Table calculated fields for business metrics</li>
             <li>Time intelligence analysis using custom calendar table</li>
             <li>Interactive dashboard design with slicers and timelines</li>
-            <li>Comparative analysis across multiple dimensions</li>
-            <li>Trend analysis with year-over-year comparisons</li>
           </ul>
         </div>
         
         <div class="project-section">
-          <h3>Business Impact</h3>
-          <p>The Global Electronics Retailer Analysis provided Maven Electronics with actionable insights to reverse their revenue decline:</p>
+          <h3>Business Impact</h3>         
+          <p>The interactive dashboard enabled Maven Electronics leadership to:</p>
           <ul class="feature-list">
-            <li>Identified $2.3M revenue opportunity by optimizing product mix in underperforming stores</li>
-            <li>Supported decision to increase marketing focus on high-value customer segments (Seniors 60+)</li>
-            <li>Informed logistics strategy to address delivery time increases, targeting 15% improvement</li>
-            <li>Enabled store-specific strategies based on performance patterns and local market conditions</li>
-            <li>Provided framework for ongoing performance monitoring with executive dashboard</li>
-            <li>Supported investment decisions in online channel based on its stronger performance</li>
-            <li>Informed product strategy to focus on resilient categories like cameras and consumer electronics</li>
+            <li>Identify product categories and geographic regions driving revenue decline</li>
+            <li>Understand seasonal patterns to optimize inventory and marketing spend</li>
+            <li>Compare online vs. in-store performance to allocate resources effectively</li>
+            <li>Monitor delivery times and address supply chain inefficiencies</li>
+            <li>Segment customers by demographics for targeted marketing campaigns</li>
           </ul>
           
-          <div class="kpi-highlight">
-            <strong>Strategic Recommendations:</strong> Focus on high-performing camera category, improve delivery operations, target senior demographic with specialized offerings, optimize underperforming store formats, increase investment in online channel, and develop region-specific strategies based on performance patterns.
+          <div class="insight-box">
+            <strong>Recommendation:</strong> Increase inventory and marketing for the high-performing Q4 season, implement upselling strategies to increase online AOV, replicate European success strategies in underperforming regions, consider phasing out the declining camera category, and develop loyalty programs for the high-value senior demographic. Extend the dashboard to include predictive analytics for demand forecasting and implement automated alerting for performance threshold breaches.
           </div>
         </div>
         
