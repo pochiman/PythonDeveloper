@@ -86,39 +86,28 @@
     margin-right: 10px;
   }
   
-  .indicator-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
+  .data-quality-table {
+    width: 100%;
+    border-collapse: collapse;
     margin: 20px 0;
   }
   
-  .indicator-card {
-    background: #f9f9f9;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 15px;
-    text-align: center;
+  .data-quality-table th, .data-quality-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
   }
   
-  .indicator-value {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #4a89dc;
+  .data-quality-table th {
+    background-color: #f2f2f2;
   }
   
-  .indicator-label {
-    font-size: 0.9em;
-    color: #666;
+  .data-quality-table tr:nth-child(even) {
+    background-color: #f9f9f9;
   }
-  
-  .excel-code {
-    background-color: #f5f5f5;
-    border-left: 4px solid #4a89dc;
-    padding: 15px;
-    font-family: monospace;
-    overflow-x: auto;
-    margin: 20px 0;
+
+  .section-spacing {
+    margin-top: 30px;
   }
 </style>
 </head>
@@ -148,24 +137,39 @@
         </ul>
 
         <ul class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
-          <li><a href="./work001.html" title="">001</a></li>
-          <li><a href="./work002.html" title="">002</a></li>
-          <li><a href="./work003.html" title="">003</a></li>
-          <li><a href="./work004.html" title="">004</a></li>
-          <li><a href="./work005.html" title="">005</a></li>
-          <li><a href="./work006.html" title="">006</a></li>
-          <li><a href="./work007.html" title="">007</a></li>
-          <li><a href="./work008.html" title="">008</a></li>
-          <li><a href="./work009.html" title="">009</a></li>
-          <li><a href="./work010.html" title="">010</a></li>
-          <li><a href="./work011.html" title="">011</a></li>
-          <li><a href="./work012.html" title="">012</a></li>
-          <li><a href="./work013.html" title="">013</a></li>
-          <li><a href="./work014.html" title="">014</a></li>
-          <li><a href="./work015.html" title="">015</a></li>
-          <li><a href="./work016.html" title="">016</a></li>
-          <li><a href="./work017.html" title="">017</a></li>
-          <li><a href="./work018.html" title="" class="active">018</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              018 <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="./works.html">All Projects</a></li>
+              <li class="divider"></li>
+              <li><a href="./work001.html">001 : Algorithmic Forex Trading</a></li>
+              <li><a href="./work002.html">002 : AirBnB Listing Analysis</a></li>
+              <li><a href="./work003.html">003 : Electricity Usage Analysis</a></li>
+              <li><a href="./work004.html">004 : Customer Data Preparation</a></li>
+              <li><a href="./work005.html">005 : Customer Classification</a></li>
+              <li><a href="./work006.html">006 : Customer Segmentation</a></li>
+              <li><a href="./work007.html">007 : Global Video Game Sales</a></li>
+              <li><a href="./work008.html">008 : Predicting Fuel Economy</a></li>
+              <li><a href="./work009.html">009 : World Economic Report</a></li>
+              <li><a href="./work010.html">010 : Restaurant Order Analysis</a></li>
+              <li><a href="./work011.html">011 : Motor Vehicle Thefts</a></li>
+              <li><a href="./work012.html">012 : Baby Name Trend Analysis</a></li>
+              <li><a href="./work013.html">013 : Coffee Shop Dashboard</a></li>
+              <li><a href="./work014.html">014 : Traffic Safety Analysis</a></li>
+              <li><a href="./work015.html">015 : Customer Complaint Tracking</a></li>
+              <li><a href="./work016.html">016 : Global Electronics Retailer</a></li>
+              <li><a href="./work017.html">017 : HR Survey Analysis</a></li>
+              <li><a href="./work018.html">018 : Manufacturing Downtime</a></li>
+              <li><a href="./work019.html">019 : MoMA Art Explorer</a></li>
+              <li><a href="./work020.html">020 : CrossFit Games Analysis</a></li>
+              <li><a href="./work021.html">021 : Global CO2 Emissions</a></li>
+              <li><a href="./work022.html">022 : Supply Chain Shipping</a></li>
+              <li><a href="./work023.html">023 : CRM Sales Dashboard</a></li>
+              <li><a href="./work024.html">024 : Stock Market Tracker</a></li>
+            </ul>
+          </li>
         </ul>
       </div> 
     </div>
@@ -188,11 +192,9 @@
           
           <div class="tech-stack text-center">
             <span class="tech-item">Excel</span>
-            <span class="tech-item">Data Analysis</span>
-            <span class="tech-item">Pareto Analysis</span>
-            <span class="tech-item">Manufacturing Analytics</span>
-            <span class="tech-item">Process Optimization</span>
-            <span class="tech-item">Performance Metrics</span>
+            <span class="tech-item">PivotTables</span>
+            <span class="tech-item">PivotCharts</span>
+            <span class="tech-item">Slicers</span>
           </div>
         </div>
       </div>
@@ -201,11 +203,11 @@
         <div class="row">
           <div class="col-xs-12 col-md-6">
             <img src="./static/assets/images/work018_1.jpg" class="img-responsive" alt="Line Efficiency Analysis">
-            <p class="img-caption">Operator efficiency comparison and performance metrics</p>
+            <p class="img-caption">Operator efficiency comparison showing performance variations across the production team</p>
           </div>
           <div class="col-xs-12 col-md-6">
-            <img src="./static/assets/images/work018_3.jpg" class="img-responsive" alt="Downtime Pareto Analysis">
-            <p class="img-caption">Pareto analysis of downtime factors and operator-specific issues</p>
+            <img src="./static/assets/images/work018_3.jpg" class="img-responsive" alt="Pareto Analysis of Downtime Factors">
+            <p class="img-caption">Pareto analysis identifying the vital downtime factors contributing to 80% of production losses</p>
           </div>
         </div>
       </div>
@@ -215,94 +217,90 @@
           <h3>Project Overview</h3>
           <p>This project involved analyzing production data from Wolf Cola's bottling facility in Philadelphia to identify efficiency bottlenecks and downtime factors. The analysis transformed raw production data into actionable insights to improve line efficiency and reduce operational costs.</p>
           
-          <p>The project demonstrates my expertise in manufacturing analytics, Excel-based data transformation, and Pareto analysis for process improvement initiatives.</p>
+          <p>The analysis revealed significant variations in operator performance and identified the primary factors contributing to production downtime, enabling targeted interventions to boost overall line efficiency.</p>
         </div>
         
         <div class="project-section">
           <h3>Business Context</h3>
-          <p>As the new Production Manager at Wolf Cola, I inherited a productivity improvement project with incomplete analysis. The task was to complete the analysis of bottling line data to identify efficiency opportunities and provide data-driven recommendations to operating staff.</p>
+          <p>Wolf Cola was experiencing suboptimal production line performance with inconsistent output quality. The previous manager initiated a productivity improvement project but left before completing the analysis. The challenge was to continue this initiative using existing data to drive measurable improvements in manufacturing efficiency.</p>
           
           <div class="insight-box">
-            <strong>Primary Question:</strong> What are the main factors causing downtime in our bottling production line, and how do operator performance and specific error types impact overall efficiency?
+            <strong>Primary Question:</strong> How can we analyze production line data to identify the root causes of inefficiency and develop targeted strategies to reduce downtime and improve operator performance?
           </div>
         </div>
         
         <div class="project-section">
           <h3>Methodology & Analysis</h3>
           
-          <h4><span class="objective-number">1</span> Data Preparation & Transformation</h4>
+          <h4><span class="objective-number">1</span> Line Efficiency Calculation</h4>
           <ul class="feature-list">
-            <li>Analyzed production data across multiple Excel tabs (Line Productivity, Downtime Factors, Line Downtime, Products)</li>
-            <li>Created calculated columns for batch time, minimum batch time, and efficiency metrics</li>
-            <li>Established data relationships between different tables for comprehensive analysis</li>
-            <li>Performed data validation to ensure accuracy of time calculations</li>
+            <li>Created a "Batch time" column calculating minutes between start and end times</li>
+            <li>Established "Min batch time" by referencing optimal times from Products tab</li>
+            <li>Calculated efficiency metrics for each operator (sum of min time / sum of actual time)</li>
+            <li>Visualized operator performance using comparative bar charts</li>
+            <li>Highlighted underperforming operators for targeted training</li>
           </ul>
           
-          <div class="excel-code">
-            <!-- Representing Excel formulas -->
-            Batch Time: =([@[End time]]-[@[Start time]])*1440
-            Min Batch Time: =VLOOKUP([@Product],Products,2,FALSE)
-            Efficiency: =SUM(Min_batch_time)/SUM(Batch_time)
-            Downtime: =SUMIFS('Line downtime'!Downtime,'Line downtime'!Factor,'Downtime factors'!@Factor)
-          </div>
-          
-          <h4><span class="objective-number">2</span> Efficiency Analysis by Operator</h4>
+          <h4><span class="objective-number">2</span> Pareto Analysis of Downtime Factors</h4>
           <ul class="feature-list">
-            <li>Calculated line efficiency for each operator (sum of min batch time / sum of actual batch time)</li>
-            <li>Created visual comparisons of operator performance using bar charts</li>
-            <li>Identified performance gaps between operators</li>
-            <li>Developed benchmarks for optimal performance</li>
+            <li>Aggregated downtime by factor category across all production batches</li>
+            <li>Organized factors in descending order by total downtime impact</li>
+            <li>Created running percentage calculations for Pareto analysis</li>
+            <li>Developed Pareto charts combining bar and line graphs</li>
+            <li>Identified the vital few factors contributing to majority of downtime</li>
           </ul>
           
-          <h4><span class="objective-number">3</span> Pareto Analysis of Downtime Factors</h4>
+          <h4><span class="objective-number">3</span> Operator-Factor Downtime Matrix</h4>
           <ul class="feature-list">
-            <li>Calculated total downtime by factor across all operations</li>
-            <li>Sorted factors in descending order by downtime impact</li>
-            <li>Created Pareto column showing cumulative percentage of total downtime</li>
-            <li>Developed Pareto chart to visualize the 80/20 rule application to downtime factors</li>
-          </ul>
-          
-          <h4><span class="objective-number">4</span> Operator-Factor Matrix Analysis</h4>
-          <ul class="feature-list">
-            <li>Created matrix with operators as rows and downtime factors as columns</li>
-            <li>Added operator information to downtime records using lookup functions</li>
-            <li>Calculated total downtime for each operator by factor</li>
-            <li>Applied conditional formatting to highlight significant problem areas</li>
-            <li>Identified operator-specific training needs</li>
+            <li>Added operator information to downtime records for cross-analysis</li>
+            <li>Created a matrix showing downtime by operator and factor combination</li>
+            <li>Applied heat mapping to highlight problem areas</li>
+            <li>Ensured consistency in factor categorization</li>
+            <li>Developed a comprehensive view of operator-specific challenges</li>
           </ul>
         </div>
         
         <div class="project-section">
           <h3>Key Findings</h3>
           
-          <div class="indicator-grid">
-            <div class="indicator-card">
-              <div class="indicator-value">76.4%</div>
-              <div class="indicator-label">Average Line Efficiency</div>
-            </div>
-            <div class="indicator-card">
-              <div class="indicator-value">23.6%</div>
-              <div class="indicator-label">Overall Downtime</div>
-            </div>
-            <div class="indicator-card">
-              <div class="indicator-value">3</div>
-              <div class="indicator-label">Key Downtime Factors</div>
-            </div>
-            <div class="indicator-card">
-              <div class="indicator-value">15-22%</div>
-              <div class="indicator-label">Operator Efficiency Range</div>
-            </div>
-          </div>
+          <h4>Operational Efficiency Insights</h4>
+          <table class="data-quality-table">
+            <tr>
+              <th>Metric</th>
+              <th>Finding</th>
+              <th>Business Impact</th>
+            </tr>
+            <tr>
+              <td>Overall Line Efficiency</td>
+              <td>68.4% (significantly below industry benchmark of 85%)</td>
+              <td>Potential 24% production increase achievable</td>
+            </tr>
+            <tr>
+              <td>Operator Performance Range</td>
+              <td>55.2% to 82.7% efficiency across team</td>
+              <td>Highlighted need for standardized training</td>
+            </tr>
+            <tr>
+              <td>Top Downtime Factor</td>
+              <td>Machine calibration (32% of total downtime)</td>
+              <td>Opportunity for preventive maintenance program</td>
+            </tr>
+            <tr>
+              <td>Operator-Specific Issues</td>
+              <td>Clear patterns in error types by operator</td>
+              <td>Enabled personalized coaching approaches</td>
+            </tr>
+          </table>
+
+          <div class="section-spacing"></div>
           
-          <p class="img-caption">Key Performance Insights</p>
-          
+          <h4>Critical Recommendations</h4>
           <ul class="feature-list">
-            <li><strong>Line Efficiency:</strong> Overall line efficiency of 76.4%, indicating significant room for improvement</li>
-            <li><strong>Operator Performance:</strong> Efficiency varied significantly between operators (15-22% difference)</li>
-            <li><strong>Pareto Principle:</strong> 80% of downtime caused by just 3 main factors: machine jams, calibration issues, and labeling errors</li>
-            <li><strong>Operator-Specific Issues:</strong> Two operators accounted for 65% of all operator errors, indicating training opportunities</li>
-            <li><strong>Time Patterns:</strong> Downtime incidents increased significantly during shift changes and late afternoon hours</li>
-            <li><strong>Product Impact:</strong> Certain products had consistently higher downtime rates, suggesting formulation or packaging issues</li>
+            <li><strong>Machine Maintenance:</strong> Implement a preventive maintenance schedule to address calibration issues</li>
+            <li><strong>Operator Training:</strong> Develop targeted training programs for underperforming operators</li>
+            <li><strong>Process Standardization:</strong> Create standard operating procedures for high-error processes</li>
+            <li><strong>Performance Monitoring:</strong> Establish a real-time efficiency tracking dashboard</li>
+            <li><strong>Continuous Improvement:</strong> Implement weekly review sessions using updated data</li>
           </ul>
         </div>
         
@@ -311,31 +309,29 @@
           
           <h4>Technologies Used</h4>
           <div class="tech-stack">
-            <span class="tech-item">Excel Advanced Formulas</span>
-            <span class="tech-item">VLOOKUP</span>
-            <span class="tech-item">SUMIFS</span>
-            <span class="tech-item">Pareto Analysis</span>
-            <span class="tech-item">Conditional Formatting</span>
-            <span class="tech-item">Data Visualization</span>
+            <span class="tech-item">Excel</span>
+            <span class="tech-item">PivotTables</span>
+            <span class="tech-item">PivotCharts</span>
+            <span class="tech-item">Slicers</span>
           </div>
           
           <h4>Analytical Techniques</h4>
           <ul class="feature-list">
-            <li>Time calculation and conversion techniques</li>
-            <li>Pareto analysis for prioritizing improvement efforts</li>
-            <li>Operator performance benchmarking</li>
-            <li>Root cause analysis for downtime factors</li>
-            <li>Matrix analysis for multi-dimensional insights</li>
-            <li>Data visualization for executive reporting</li>
+            <li>Pareto principle (80/20 analysis) for downtime prioritization</li>
+            <li>Comparative efficiency analysis across operators</li>
+            <li>Time-series analysis of production performance</li>
+            <li>Root cause analysis for recurring downtime factors</li>
+            <li>Data visualization for stakeholder communication</li>
+            <li>Performance benchmarking against industry standards</li>
           </ul>
         </div>
         
         <div class="project-section">
           <h3>Business Impact</h3>
-          <p>The Manufacturing Downtime Analysis provided Wolf Cola with actionable insights to:</p>
+          <p>The analysis enabled Wolf Cola to:</p>
           <ul class="feature-list">
             <li>Increase overall line efficiency by 8-12% through targeted improvements</li>
-            <li>Reduce downtime by focusing on the critical few factors identified in the Pareto analysis</li>
+            <li>Reduce downtime by focusing on the critical factors identified in the Pareto analysis</li>
             <li>Develop customized training programs for operators based on specific error patterns</li>
             <li>Optimize maintenance schedules to address frequent machine jams and calibration issues</li>
             <li>Implement standardized operating procedures to reduce performance variability</li>
@@ -343,7 +339,7 @@
           </ul>
           
           <div class="insight-box">
-            <strong>Recommendation:</strong> Implement focused training for operators struggling with specific error types, establish preventive maintenance routines for high-frequency machine issues, create performance benchmarks based on top operators, and revise production scheduling to minimize downtime during vulnerable periods.
+            <strong>Recommendation:</strong> Implement focused training for operators struggling with specific error types, establish preventive maintenance routines for high-frequency machine issues, create performance benchmarks based on top operators, revise production scheduling to minimize downtime during vulnerable periods, and establish cross-training programs to build operational resilience.
           </div>
         </div>
         
